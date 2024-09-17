@@ -1,0 +1,17 @@
+{
+    "name": "hello-world-sample",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [],
+    "author": "ServiceNow",
+    "license": "ISC",
+    "scripts": {
+        "build": "now-sdk build",
+        "fetch": "now-sdk fetch"
+    },
+    "devDependencies": {
+        "typescript": "catalog:",
+        "@servicenow/glide": "catalog:",
+        "@servicenow/sdk": "catalog:"
+    }
+}

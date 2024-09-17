@@ -10,22 +10,19 @@ You need to have [node](https://nodejs.org/en/) v20+ and [pnpm](https://pnpm.io/
 
 ## Usage
 
--   `git clone https://github.com/ServiceNow/sdk-examles`
+-   `git clone https://github.com/ServiceNow/sdk-examples`
 -   `pnpm install`
 -   `code <any-sample-folder>`
--   `pnpm run build` to build the sample application
+-   `npm run build` to build the sample application
 -   Alternatively, follow the instructions in each sample's README for setting up and running the sample
-
-## Getting Started
-
--   [Hello World Sample](hello-world-sample): The Hello World sample for SDK.
 
 ## Samples
 
 <!-- SAMPLES_BEGIN -->
 
-| Sample | API & Contribution |
-| Hello World | Basic sample application |
-| ------ | --- |
+| Sample Name                                                 | API & Contribution       |
+| ----------------------------------------------------------- | ------------------------ |
+| [Hello World](hello-world-sample/README.md)                 | Basic sample application |
+| [Scripted Rest API Simple](restapi-simple-sample/README.md) | RestApi simple example   |
 
 <!-- SAMPLES_END -->

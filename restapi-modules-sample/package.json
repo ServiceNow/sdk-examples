@@ -1,5 +1,5 @@
 {
-    "name": "restapi-sample",
+    "name": "restapi-modules-sample",
     "version": "1.0.0",
     "description": "",
     "keywords": [],
@@ -7,7 +7,6 @@
     "license": "ISC",
     "scripts": {
         "build": "now-sdk build",
-        "deploy": "now-sdk deploy",
         "fetch": "now-sdk fetch"
     },
     "devDependencies": {

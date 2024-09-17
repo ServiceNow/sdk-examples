@@ -1,5 +1,5 @@
 {
-    "name": "hello-world-sample",
+    "name": "restapi-sample",
     "version": "1.0.0",
     "description": "",
     "keywords": [],
@@ -7,7 +7,6 @@
     "license": "ISC",
     "scripts": {
         "build": "now-sdk build",
-        "deloy": "now-sdk deploy",
         "fetch": "now-sdk fetch"
     },
     "devDependencies": {
