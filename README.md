@@ -12,17 +12,18 @@ You need to have [node](https://nodejs.org/en/) v20+ and [pnpm](https://pnpm.io/
 
 -   `git clone https://github.com/ServiceNow/sdk-examples`
 -   `pnpm install`
--   `code <any-sample-folder>`
--   `npm run build` to build the sample application
--   Alternatively, follow the instructions in each sample's README for setting up and running the sample
+-   `code <sample directory>` to open one of the sample projects
+-   `npm run build` to build any of the sample projects if desired
 
 ## Samples
 
 <!-- SAMPLES_BEGIN -->
 
-| Sample Name                                                 | API & Contribution       |
-| ----------------------------------------------------------- | ------------------------ |
-| [Hello World](hello-world-sample/README.md)                 | Basic sample application |
-| [Scripted Rest API Simple](restapi-simple-sample/README.md) | RestApi simple example   |
+| Sample Name                                                  | API & Contribution       |
+| ------------------------------------------------------------ | ------------------------ |
+| [Hello World](hello-world-sample/README.md)                  | Basic sample application |
+| [Tables](table-sample/README.md)                             | Tables API sample        |
+| [Scripted Rest API Simple](restapi-simple-sample/README.md)  | RestApi simple example   |
+| [Scripted Rest API Module](restapi-modules-sample/README.md) | RestApi modules example  |
 
 <!-- SAMPLES_END -->
