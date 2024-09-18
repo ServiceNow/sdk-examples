@@ -19,11 +19,10 @@ You need to have [node](https://nodejs.org/en/) v20+ and [pnpm](https://pnpm.io/
 
 <!-- SAMPLES_BEGIN -->
 
-| Sample Name                                                  | API & Contribution       |
-| ------------------------------------------------------------ | ------------------------ |
-| [Hello World](hello-world-sample/README.md)                  | Basic sample application |
-| [Tables](table-sample/README.md)                             | Tables API sample        |
-| [Scripted Rest API Simple](restapi-simple-sample/README.md)  | RestApi simple example   |
-| [Scripted Rest API Module](restapi-modules-sample/README.md) | RestApi modules example  |
+| Sample Name                                   | API & Contribution       |
+| --------------------------------------------- | ------------------------ |
+| [Hello World](hello-world-sample/README.md)   | Basic sample application |
+| [Tables](table-sample/README.md)              | Tables API sample        |
+| [Scripted Rest API](restapi-sample/README.md) | RestApi simple example   |
 
 <!-- SAMPLES_END -->

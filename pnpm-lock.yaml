@@ -48,19 +48,7 @@ importers:
         specifier: 'catalog:'
         version: 5.6.2
 
-  restapi-modules-sample:
-    devDependencies:
-      '@servicenow/glide':
-        specifier: 'catalog:'
-        version: 26.0.1
-      '@servicenow/sdk':
-        specifier: 'catalog:'
-        version: 2.0.1(encoding@0.1.13)(mem-fs-editor@9.7.0(mem-fs@2.3.0))(mem-fs@2.3.0)
-      typescript:
-        specifier: 'catalog:'
-        version: 5.6.2
-
-  restapi-simple-sample:
+  restapi-sample:
     devDependencies:
       '@servicenow/glide':
         specifier: 'catalog:'
@@ -74,9 +62,6 @@ importers:
 
   table-sample:
     devDependencies:
-      '@servicenow/glide':
-        specifier: 'catalog:'
-        version: 26.0.1
       '@servicenow/sdk':
         specifier: 'catalog:'
         version: 2.0.1(encoding@0.1.13)(mem-fs-editor@9.7.0(mem-fs@2.3.0))(mem-fs@2.3.0)
