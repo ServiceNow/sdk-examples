@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/modules",
+    "rootDir": "src",
+    "noEmit": false,
+    "strict": true,
+    "target": "ES2020"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "src/fluent"
+  ],
+}
