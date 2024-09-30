@@ -3,8 +3,8 @@ import { Table, StringColumn, IntegerColumn, BooleanColumn, DateColumn } from '@
 /**
  * This example creates a table in the ServiceNow platform with 4 columns.
  */
-export const x_tablesimple_name = Table({
-    name: 'x_tablesimple_name',
+export const x_tablesample_name = Table({
+    name: 'x_tablesample_name',
     schema: {
         string_column: StringColumn({ mandatory: true, lable: 'String Column' }),
         integer_column: IntegerColumn({ mandatory: true, label: 'Integer Column' }),
