@@ -1,0 +1,17 @@
+{
+    "name": "dependencies-sample",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [],
+    "author": "ServiceNow",
+    "license": "ISC",
+    "scripts": {
+        "build": "now-sdk build",
+        "fetch": "now-sdk fetch",
+        "dependencies": "now-sdk dependencies"
+    },
+    "devDependencies": {
+        "typescript": "catalog:",
+        "@servicenow/sdk": "catalog:"
+    }
+}
