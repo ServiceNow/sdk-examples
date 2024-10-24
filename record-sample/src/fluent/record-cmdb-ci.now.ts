@@ -2,7 +2,7 @@ import { Record } from '@servicenow/sdk/core'
 
 //This example generates a record in the incident table
 
-const computerOne = Record({
+Record({
     $id: Now.ID['cmdb-ci-computer-1'],
     table: 'cmdb_ci_computer',
     data: {
@@ -21,8 +21,8 @@ const computerOne = Record({
         os_service_pack: 'Service Pack 3',
         os_version: '5.1',
         po_number: 'PO27711',
-        ram: '1543'
-        serial_number: 'L3BB911'
+        ram: '1543',
+        serial_number: 'L3BB911',
     },
 })
 
@@ -45,7 +45,7 @@ Record({
         os_service_pack: 'Service Pack 3',
         os_version: '5.1',
         po_number: 'PO27711',
-        ram: '1543'
-        serial_number: 'L3BB911'
+        ram: '1543',
+        serial_number: 'L3BB911',
     },
 })

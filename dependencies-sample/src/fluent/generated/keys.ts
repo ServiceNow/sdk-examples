@@ -17,6 +17,10 @@ declare global {
                         table: 'sys_ui_action_role'
                         id: 'a2c24893e3784fd9a73ce22b5e357bbb'
                     }
+                    package_json: {
+                        table: 'sys_module'
+                        id: '7025f857bc4d44a492c370ac5ce14913'
+                    }
                 }
             }
         }

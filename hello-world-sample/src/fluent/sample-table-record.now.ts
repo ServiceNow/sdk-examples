@@ -7,8 +7,8 @@ Record({
     table: 'x_helloworld_tableone',
     $id: Now.ID['x_helloworld_tableone_record1'],
     data: {
-        stringField: 'Hello World 1',
-        dateTimeField: '01-01-2024 12:00:00',
-        integerField: 1,
+        string_field: 'Hello World 1',
+        datetime_field: '01-01-2024 12:00:00',
+        integer_field: 1,
     },
 })

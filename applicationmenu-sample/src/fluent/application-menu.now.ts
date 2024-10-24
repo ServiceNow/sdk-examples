@@ -1,4 +1,4 @@
-import { ApplicationMenu, Record, Role } from '@servicenow/sdk/core'
+import { ApplicationMenu } from '@servicenow/sdk/core'
 import { activity_admin, appCategory } from './menu-category-roles.now'
 
 export const menu = ApplicationMenu({
