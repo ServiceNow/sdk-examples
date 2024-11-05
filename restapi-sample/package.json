@@ -10,8 +10,8 @@
         "fetch": "now-sdk fetch"
     },
     "devDependencies": {
-        "typescript": "catalog:",
-        "@servicenow/glide": "catalog:",
-        "@servicenow/sdk": "catalog:"
+        "@servicenow/glide": "^26.0.1",
+        "@servicenow/sdk": "^2.1.3",
+        "typescript": "5.5.2"
     }
 }

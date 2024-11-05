@@ -25,13 +25,28 @@ export const sys_ui_action = Table({
             maxLength: 40,
             dropdown: 'none',
         }),
-        active: BooleanColumn({ mandatory: false, label: 'Active', read_only: false, active: true, default: true }),
-        client: BooleanColumn({ mandatory: false, label: 'Client', read_only: false, active: true, default: false }),
+        active: BooleanColumn({
+            mandatory: false,
+            label: 'Active',
+            read_only: false,
+            active: true,
+            default: true,
+            maxLength: 40,
+        }),
+        client: BooleanColumn({
+            mandatory: false,
+            label: 'Client',
+            read_only: false,
+            active: true,
+            default: false,
+            maxLength: 40,
+        }),
         client_script_v2: ScriptColumn({
             mandatory: false,
             label: 'Workspace Client Script',
             read_only: false,
             active: true,
+            maxLength: 8000,
         }),
         comments: StringColumn({
             mandatory: false,
@@ -45,15 +60,23 @@ export const sys_ui_action = Table({
             label: 'Condition',
             read_only: false,
             active: true,
+            maxLength: 254,
             column_type: 'condition_string',
         }),
-        form_action: BooleanColumn({ mandatory: false, label: 'Form action', read_only: false, active: true }),
+        form_action: BooleanColumn({
+            mandatory: false,
+            label: 'Form action',
+            read_only: false,
+            active: true,
+            maxLength: 40,
+        }),
         form_button: BooleanColumn({
             mandatory: false,
             label: 'Form button',
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         form_button_v2: BooleanColumn({
             mandatory: false,
@@ -61,6 +84,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         form_context_menu: BooleanColumn({
             mandatory: false,
@@ -68,6 +92,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         form_link: BooleanColumn({
             mandatory: false,
@@ -75,6 +100,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         form_menu_button_v2: BooleanColumn({
             mandatory: false,
@@ -82,6 +108,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         form_style: StringColumn({
             mandatory: false,
@@ -91,9 +118,9 @@ export const sys_ui_action = Table({
             maxLength: 40,
             dropdown: 'dropdown_with_none',
             choices: {
+                destructive: { label: 'Destructive', sequence: 2, inactive: false, language: 'en' },
                 unstyled: { label: 'Unstyled', sequence: 3, inactive: false, language: 'en' },
                 primary: { label: 'Primary', sequence: 1, inactive: false, language: 'en' },
-                destructive: { label: 'Destructive', sequence: 2, inactive: false, language: 'en' },
             },
         }),
         format_for_configurable_workspace: BooleanColumn({
@@ -102,22 +129,37 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
-        hint: TranslatedFieldColumn({ mandatory: false, label: 'Hint', read_only: false, active: true }),
+        hint: TranslatedFieldColumn({
+            mandatory: false,
+            label: 'Hint',
+            read_only: false,
+            active: true,
+            maxLength: 254,
+        }),
         isolate_script: BooleanColumn({
             mandatory: false,
             label: 'Isolate script',
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
-        list_action: BooleanColumn({ mandatory: false, label: 'List action', read_only: false, active: true }),
+        list_action: BooleanColumn({
+            mandatory: false,
+            label: 'List action',
+            read_only: false,
+            active: true,
+            maxLength: 40,
+        }),
         list_banner_button: BooleanColumn({
             mandatory: false,
             label: 'List banner button',
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         list_button: BooleanColumn({
             mandatory: false,
@@ -125,6 +167,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         list_choice: BooleanColumn({
             mandatory: false,
@@ -132,6 +175,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         list_context_menu: BooleanColumn({
             mandatory: false,
@@ -139,6 +183,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         list_link: BooleanColumn({
             mandatory: false,
@@ -146,6 +191,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         list_save_with_form_button: BooleanColumn({
             mandatory: false,
@@ -153,6 +199,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         list_style: StringColumn({
             mandatory: false,
@@ -162,9 +209,9 @@ export const sys_ui_action = Table({
             maxLength: 40,
             dropdown: 'dropdown_with_none',
             choices: {
+                unstyled: { label: 'Unstyled', sequence: 3, inactive: false, language: 'en' },
                 primary: { label: 'Primary', sequence: 1, inactive: false, language: 'en' },
                 destructive: { label: 'Destructive', sequence: 2, inactive: false, language: 'en' },
-                unstyled: { label: 'Unstyled', sequence: 3, inactive: false, language: 'en' },
             },
         }),
         messages: StringColumn({
@@ -175,7 +222,7 @@ export const sys_ui_action = Table({
             maxLength: 4000,
             dropdown: 'none',
         }),
-        name: TranslatedFieldColumn({ mandatory: false, label: 'Name', read_only: false, active: true }),
+        name: TranslatedFieldColumn({ mandatory: false, label: 'Name', read_only: false, active: true, maxLength: 40 }),
         onclick: StringColumn({
             mandatory: false,
             label: 'Onclick',
@@ -192,13 +239,14 @@ export const sys_ui_action = Table({
             default: 100,
             maxLength: 40,
         }),
-        script: ScriptColumn({ mandatory: false, label: 'Script', read_only: false, active: true }),
+        script: ScriptColumn({ mandatory: false, label: 'Script', read_only: false, active: true, maxLength: 8000 }),
         show_insert: BooleanColumn({
             mandatory: false,
             label: 'Show insert',
             read_only: false,
             active: true,
             default: true,
+            maxLength: 40,
         }),
         show_multiple_update: BooleanColumn({
             mandatory: false,
@@ -206,6 +254,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         show_query: BooleanColumn({
             mandatory: false,
@@ -213,6 +262,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         show_update: BooleanColumn({
             mandatory: false,
@@ -220,6 +270,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: true,
+            maxLength: 40,
         }),
         sys_domain: DomainIdColumn({
             mandatory: false,
@@ -227,6 +278,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: 'global',
+            maxLength: 32,
         }),
         sys_domain_path: DomainPathColumn({
             mandatory: false,
@@ -234,12 +286,14 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: '/',
+            maxLength: 255,
         }),
         sys_id: GenericColumn({
             mandatory: false,
             label: 'Sys ID',
             read_only: false,
             active: true,
+            maxLength: 32,
             column_type: 'GUID',
         }),
         sys_overrides: ReferenceColumn({
@@ -247,15 +301,17 @@ export const sys_ui_action = Table({
             label: 'Overrides',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'sys_ui_action',
         }),
-        table: TableNameColumn({ mandatory: false, label: 'Table', read_only: false, active: true }),
+        table: TableNameColumn({ mandatory: false, label: 'Table', read_only: false, active: true, maxLength: 80 }),
         ui11_compatible: BooleanColumn({
             mandatory: false,
             label: 'List v2 Compatible',
             read_only: false,
             active: true,
             default: true,
+            maxLength: 40,
         }),
         ui16_compatible: BooleanColumn({
             mandatory: false,
@@ -263,6 +319,7 @@ export const sys_ui_action = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
     },
 })
