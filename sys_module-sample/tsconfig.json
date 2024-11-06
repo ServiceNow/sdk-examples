@@ -4,14 +4,16 @@
     "rootDir": "src",
     "noEmit": false,
     "strict": true,
-    "target": "ES2020"
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "target": "ES2022"
   },
   "include": [
     "src"
   ],
   "exclude": [
     "dist",
-    "node_modules",
-    "src/fluent"
+    "node_modules"
   ],
 }
