@@ -6,7 +6,7 @@ This repository contains sample code illustrating the [ServiceNow SDK](https://d
 
 ## Prerequisites
 
-You need to use [node](https://nodejs.org/en/) v20.0 to run the examples. 
+You need to use [node](https://nodejs.org/en/) v20+ to run the examples. 
 
 ## Usage
 
