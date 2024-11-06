@@ -7,7 +7,9 @@
     "license": "ISC",
     "scripts": {
         "build": "tsc -b && now-sdk build",
-        "fetch": "now-sdk fetch"
+        "deploy": "now-sdk deploy",
+        "fetch": "now-sdk fetch",
+        "dependencies": "now-sdk dependencies"
     },
     "devDependencies": {
         "@servicenow/eslint-plugin-sdk-app-plugin": "^2.1.3",
