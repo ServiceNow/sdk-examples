@@ -1,3 +1,4 @@
+import '@servicenow/sdk/global'
 import { BusinessRule } from '@servicenow/sdk/core'
 import { businessRuleProcess } from '../server/br-rule-module'
 

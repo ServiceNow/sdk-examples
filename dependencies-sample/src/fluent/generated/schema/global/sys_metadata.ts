@@ -18,6 +18,7 @@ export const sys_metadata = Table({
             read_only: false,
             active: true,
             default: 'javascript:current.getTableName();',
+            maxLength: 80,
         }),
         sys_created_by: StringColumn({
             mandatory: false,
@@ -27,12 +28,19 @@ export const sys_metadata = Table({
             maxLength: 40,
             dropdown: 'none',
         }),
-        sys_created_on: DateTimeColumn({ mandatory: false, label: 'Created', read_only: false, active: true }),
+        sys_created_on: DateTimeColumn({
+            mandatory: false,
+            label: 'Created',
+            read_only: false,
+            active: true,
+            maxLength: 40,
+        }),
         sys_id: GenericColumn({
             mandatory: true,
             label: 'Sys ID',
             read_only: false,
             active: true,
+            maxLength: 32,
             column_type: 'GUID',
         }),
         sys_mod_count: IntegerColumn({
@@ -55,6 +63,7 @@ export const sys_metadata = Table({
             label: 'Package',
             read_only: true,
             active: true,
+            maxLength: 32,
             referenceTable: 'sys_package',
         }),
         sys_policy: StringColumn({
@@ -65,8 +74,8 @@ export const sys_metadata = Table({
             maxLength: 40,
             dropdown: 'dropdown_with_none',
             choices: {
-                protected: { label: 'Protected', sequence: 2, inactive: false, language: 'en' },
                 read: { label: 'Read-only', sequence: 1, inactive: false, language: 'en' },
+                protected: { label: 'Protected', sequence: 2, inactive: false, language: 'en' },
             },
         }),
         sys_scope: ReferenceColumn({
@@ -76,6 +85,7 @@ export const sys_metadata = Table({
             active: true,
             default:
                 "javascript:(((typeof parent == 'object') && parent != null && parent.getTableName() == 'sys_app') ? parent.sys_id : gs.getCurrentApplicationId())",
+            maxLength: 32,
             referenceTable: 'sys_scope',
         }),
         sys_update_name: StringColumn({
@@ -94,6 +104,12 @@ export const sys_metadata = Table({
             maxLength: 40,
             dropdown: 'none',
         }),
-        sys_updated_on: DateTimeColumn({ mandatory: false, label: 'Updated', read_only: false, active: true }),
+        sys_updated_on: DateTimeColumn({
+            mandatory: false,
+            label: 'Updated',
+            read_only: false,
+            active: true,
+            maxLength: 40,
+        }),
     },
 })

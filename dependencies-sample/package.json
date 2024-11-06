@@ -11,7 +11,7 @@
         "dependencies": "now-sdk dependencies"
     },
     "devDependencies": {
-        "typescript": "catalog:",
-        "@servicenow/sdk": "catalog:"
+        "@servicenow/sdk": "^2.1.3",
+        "typescript": "5.5.2"
     }
 }

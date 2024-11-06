@@ -29,7 +29,14 @@ export const sc_cat_item = Table({
                 restricted: { label: 'Restricted', sequence: 2, inactive: false, language: 'en' },
             },
         }),
-        active: BooleanColumn({ mandatory: false, label: 'Active', read_only: false, active: true, default: true }),
+        active: BooleanColumn({
+            mandatory: false,
+            label: 'Active',
+            read_only: false,
+            active: true,
+            default: true,
+            maxLength: 40,
+        }),
         availability: StringColumn({
             mandatory: false,
             label: 'Availability',
@@ -44,13 +51,14 @@ export const sc_cat_item = Table({
                 on_desktop: { label: 'Desktop Only', sequence: 1, inactive: false, language: 'en' },
             },
         }),
-        billable: BooleanColumn({ mandatory: false, label: 'Billable', read_only: false, active: true }),
+        billable: BooleanColumn({ mandatory: false, label: 'Billable', read_only: false, active: true, maxLength: 40 }),
         category: ReferenceColumn({
             mandatory: false,
             label: 'Category',
             read_only: false,
             active: true,
             default: 'javascript: new SNCCatalogUtil().getCategoryIDFromURL();',
+            maxLength: 32,
             referenceTable: 'sc_category',
         }),
         checked_out: StringColumn({
@@ -65,12 +73,20 @@ export const sc_cat_item = Table({
                 false: { label: 'false', sequence: 2, inactive: false, language: 'en' },
             },
         }),
-        cost: DecimalColumn({ mandatory: false, label: 'Cost', read_only: false, active: true, default: 0 }),
+        cost: DecimalColumn({
+            mandatory: false,
+            label: 'Cost',
+            read_only: false,
+            active: true,
+            default: 0,
+            maxLength: 15,
+        }),
         custom_cart: ReferenceColumn({
             mandatory: false,
             label: 'Cart',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'sys_ui_macro',
         }),
         delivery_plan: ReferenceColumn({
@@ -79,6 +95,7 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: 'javascript:getDefaultDeliveryPlan()',
+            maxLength: 32,
             referenceTable: 'sc_cat_item_delivery_plan',
         }),
         delivery_plan_script: GenericColumn({
@@ -86,6 +103,7 @@ export const sc_cat_item = Table({
             label: 'Delivery plan script',
             read_only: false,
             active: true,
+            maxLength: 4000,
             column_type: 'script_plain',
         }),
         delivery_time: GenericColumn({
@@ -94,6 +112,7 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: '2 00:00:00',
+            maxLength: 40,
             column_type: 'glide_duration',
         }),
         description: GenericColumn({
@@ -101,6 +120,7 @@ export const sc_cat_item = Table({
             label: 'Description',
             read_only: false,
             active: true,
+            maxLength: 8000,
             column_type: 'translated_html',
         }),
         display_price_property: StringColumn({
@@ -116,6 +136,7 @@ export const sc_cat_item = Table({
             label: 'Entitlement script',
             read_only: false,
             active: true,
+            maxLength: 4000,
             column_type: 'script_plain',
         }),
         flow_designer_flow: ReferenceColumn({
@@ -123,6 +144,7 @@ export const sc_cat_item = Table({
             label: 'Flow',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'sys_hub_flow',
         }),
         fulfillment_automation_level: StringColumn({
@@ -145,6 +167,7 @@ export const sc_cat_item = Table({
             label: 'Fulfillment group',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'sys_user_group',
         }),
         hide_sp: BooleanColumn({
@@ -153,12 +176,14 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         icon: GenericColumn({
             mandatory: false,
             label: 'Icon',
             read_only: false,
             active: true,
+            maxLength: 40,
             column_type: 'user_image',
         }),
         ignore_price: BooleanColumn({
@@ -167,12 +192,14 @@ export const sc_cat_item = Table({
             read_only: true,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         image: GenericColumn({
             mandatory: false,
             label: 'Image',
             read_only: false,
             active: true,
+            maxLength: 40,
             column_type: 'image',
         }),
         list_price: GenericColumn({
@@ -180,6 +207,7 @@ export const sc_cat_item = Table({
             label: 'List Price',
             read_only: false,
             active: true,
+            maxLength: 20,
             column_type: 'currency',
         }),
         location: ReferenceColumn({
@@ -187,6 +215,7 @@ export const sc_cat_item = Table({
             label: 'Location',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'cmn_location',
         }),
         make_item_non_conversational: BooleanColumn({
@@ -194,12 +223,14 @@ export const sc_cat_item = Table({
             label: 'Make the item non-conversational in VA',
             read_only: false,
             active: true,
+            maxLength: 40,
         }),
         mandatory_attachment: BooleanColumn({
             mandatory: false,
             label: 'Mandatory Attachment',
             read_only: false,
             active: true,
+            maxLength: 40,
         }),
         meta: StringColumn({
             mandatory: false,
@@ -215,12 +246,14 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         mobile_picture: GenericColumn({
             mandatory: false,
             label: 'Classic Mobile Picture',
             read_only: false,
             active: true,
+            maxLength: 40,
             column_type: 'user_image',
         }),
         mobile_picture_type: StringColumn({
@@ -242,17 +275,38 @@ export const sc_cat_item = Table({
             label: 'Model',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'cmdb_model',
         }),
-        name: TranslatedTextColumn({ mandatory: false, label: 'Name', read_only: false, active: true }),
-        no_attachment_v2: BooleanColumn({ mandatory: false, label: 'Hide Attachment', read_only: false, active: true }),
-        no_cart: BooleanColumn({ mandatory: false, label: 'No cart', read_only: false, active: true, default: false }),
-        no_cart_v2: BooleanColumn({ mandatory: false, label: "Hide 'Add to Cart'", read_only: false, active: true }),
+        name: TranslatedTextColumn({ mandatory: false, label: 'Name', read_only: false, active: true, maxLength: 100 }),
+        no_attachment_v2: BooleanColumn({
+            mandatory: false,
+            label: 'Hide Attachment',
+            read_only: false,
+            active: true,
+            maxLength: 40,
+        }),
+        no_cart: BooleanColumn({
+            mandatory: false,
+            label: 'No cart',
+            read_only: false,
+            active: true,
+            default: false,
+            maxLength: 40,
+        }),
+        no_cart_v2: BooleanColumn({
+            mandatory: false,
+            label: "Hide 'Add to Cart'",
+            read_only: false,
+            active: true,
+            maxLength: 40,
+        }),
         no_delivery_time_v2: BooleanColumn({
             mandatory: false,
             label: 'Hide Delivery time',
             read_only: false,
             active: true,
+            maxLength: 40,
         }),
         no_order: BooleanColumn({
             mandatory: false,
@@ -260,6 +314,7 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         no_order_now: BooleanColumn({
             mandatory: false,
@@ -267,6 +322,7 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         no_proceed_checkout: BooleanColumn({
             mandatory: false,
@@ -274,6 +330,7 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         no_quantity: BooleanColumn({
             mandatory: false,
@@ -281,13 +338,21 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
-        no_quantity_v2: BooleanColumn({ mandatory: false, label: 'Hide Quantity', read_only: false, active: true }),
+        no_quantity_v2: BooleanColumn({
+            mandatory: false,
+            label: 'Hide Quantity',
+            read_only: false,
+            active: true,
+            maxLength: 40,
+        }),
         no_save_as_draft: BooleanColumn({
             mandatory: false,
             label: "Hide 'Save as Draft'",
             read_only: false,
             active: true,
+            maxLength: 40,
         }),
         no_search: BooleanColumn({
             mandatory: false,
@@ -295,12 +360,14 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         no_wishlist_v2: BooleanColumn({
             mandatory: false,
             label: "Hide 'Add to Wish List'",
             read_only: false,
             active: true,
+            maxLength: 40,
         }),
         omit_price: BooleanColumn({
             mandatory: false,
@@ -308,6 +375,7 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
         order: IntegerColumn({
             mandatory: false,
@@ -322,6 +390,7 @@ export const sc_cat_item = Table({
             label: 'Ordered item link',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'sc_ordered_item_link',
         }),
         owner: ReferenceColumn({
@@ -330,6 +399,7 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: 'javascript:gs.getUserID()',
+            maxLength: 32,
             referenceTable: 'sys_user',
         }),
         picture: GenericColumn({
@@ -337,6 +407,7 @@ export const sc_cat_item = Table({
             label: 'Picture',
             read_only: false,
             active: true,
+            maxLength: 40,
             column_type: 'user_image',
         }),
         preview: GenericColumn({
@@ -344,6 +415,7 @@ export const sc_cat_item = Table({
             label: 'Preview link',
             read_only: false,
             active: true,
+            maxLength: 255,
             column_type: 'catalog_preview',
         }),
         price: GenericColumn({
@@ -352,6 +424,7 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: '0.00',
+            maxLength: 20,
             column_type: 'price',
         }),
         published_ref: ReferenceColumn({
@@ -359,6 +432,7 @@ export const sc_cat_item = Table({
             label: 'Published item',
             read_only: true,
             active: true,
+            maxLength: 32,
             referenceTable: 'sc_cat_item',
         }),
         recurring_frequency: ChoiceColumn({
@@ -368,12 +442,14 @@ export const sc_cat_item = Table({
             label: 'Recurring Price Frequency',
             read_only: false,
             active: true,
+            maxLength: 40,
         }),
         recurring_price: GenericColumn({
             mandatory: false,
             label: 'Recurring price',
             read_only: false,
             active: true,
+            maxLength: 20,
             column_type: 'price',
         }),
         request_method: StringColumn({
@@ -384,18 +460,19 @@ export const sc_cat_item = Table({
             maxLength: 40,
             dropdown: 'dropdown_with_none',
             choices: {
+                submit: { label: 'Submit', sequence: 3, inactive: false, language: 'en' },
                 NULL_OVERRIDE: { label: 'Order', sequence: 1, inactive: false, language: 'en' },
                 request: { label: 'Request', sequence: 2, inactive: false, language: 'en' },
-                submit: { label: 'Submit', sequence: 3, inactive: false, language: 'en' },
             },
         }),
-        roles: UserRolesColumn({ mandatory: false, label: 'Roles', read_only: false, active: true }),
+        roles: UserRolesColumn({ mandatory: false, label: 'Roles', read_only: false, active: true, maxLength: 255 }),
         sc_catalogs: GenericColumn({
             mandatory: false,
             label: 'Catalogs',
             read_only: false,
             active: true,
             default: 'javascript:SNC.Catalog.getDefaultCatalog();',
+            maxLength: 4000,
             column_type: 'glide_list',
         }),
         sc_ic_item_staging: ReferenceColumn({
@@ -403,6 +480,7 @@ export const sc_cat_item = Table({
             label: 'Created from item design',
             read_only: true,
             active: true,
+            maxLength: 32,
             referenceTable: 'sc_ic_item_staging',
         }),
         sc_ic_version: IntegerColumn({
@@ -417,6 +495,7 @@ export const sc_cat_item = Table({
             label: 'Associated template',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'sc_template',
         }),
         short_description: TranslatedTextColumn({
@@ -424,6 +503,7 @@ export const sc_cat_item = Table({
             label: 'Short description',
             read_only: false,
             active: true,
+            maxLength: 200,
         }),
         show_variable_help_on_load: BooleanColumn({
             mandatory: false,
@@ -431,8 +511,15 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: false,
+            maxLength: 40,
         }),
-        start_closed: BooleanColumn({ mandatory: false, label: 'Start closed', read_only: false, active: true }),
+        start_closed: BooleanColumn({
+            mandatory: false,
+            label: 'Start closed',
+            read_only: false,
+            active: true,
+            maxLength: 40,
+        }),
         state: StringColumn({
             mandatory: false,
             label: 'State',
@@ -453,6 +540,7 @@ export const sc_cat_item = Table({
             label: 'Sys ID',
             read_only: false,
             active: true,
+            maxLength: 32,
             column_type: 'GUID',
         }),
         taxonomy_topic: ReferenceColumn({
@@ -460,6 +548,7 @@ export const sc_cat_item = Table({
             label: 'Taxonomy topic',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'topic',
         }),
         template: ReferenceColumn({
@@ -467,6 +556,7 @@ export const sc_cat_item = Table({
             label: 'Template',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'sys_template',
         }),
         template_manager_roles: UserRolesColumn({
@@ -474,6 +564,7 @@ export const sc_cat_item = Table({
             label: 'Template Manager roles',
             read_only: false,
             active: true,
+            maxLength: 255,
         }),
         type: StringColumn({
             mandatory: false,
@@ -497,12 +588,14 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: true,
+            maxLength: 40,
         }),
         vendor: ReferenceColumn({
             mandatory: false,
             label: 'Vendor',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'core_company',
         }),
         version: IntegerColumn({ mandatory: false, label: 'Version', read_only: true, active: true, maxLength: 40 }),
@@ -512,6 +605,7 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: true,
+            maxLength: 40,
         }),
         visible_guide: BooleanColumn({
             mandatory: false,
@@ -519,6 +613,7 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: true,
+            maxLength: 40,
         }),
         visible_standalone: BooleanColumn({
             mandatory: false,
@@ -526,12 +621,14 @@ export const sc_cat_item = Table({
             read_only: false,
             active: true,
             default: true,
+            maxLength: 40,
         }),
         workflow: ReferenceColumn({
             mandatory: false,
             label: 'Workflow',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'wf_workflow',
         }),
     },

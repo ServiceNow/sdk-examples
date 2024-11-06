@@ -10,6 +10,7 @@ export const sys_ui_action_role = Table({
             label: 'Sys ID',
             read_only: false,
             active: true,
+            maxLength: 32,
             column_type: 'GUID',
         }),
         sys_ui_action: ReferenceColumn({
@@ -17,6 +18,7 @@ export const sys_ui_action_role = Table({
             label: 'UI Action',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'sys_ui_action',
         }),
         sys_user_role: ReferenceColumn({
@@ -24,6 +26,7 @@ export const sys_ui_action_role = Table({
             label: 'Role',
             read_only: false,
             active: true,
+            maxLength: 32,
             referenceTable: 'sys_user_role',
         }),
     },
