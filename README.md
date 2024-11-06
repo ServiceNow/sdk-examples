@@ -6,23 +6,32 @@ This repository contains sample code illustrating the [ServiceNow SDK](https://d
 
 ## Prerequisites
 
-You need to have [node](https://nodejs.org/en/) v20+ and [pnpm](https://pnpm.io/) installed on your system to run the examples. It is recommended to use the node version 20 or higher currently
+You need to have [node](https://nodejs.org/en/) v20+ to run the examples. 
 
 ## Usage
 
 -   `git clone https://github.com/ServiceNow/sdk-examples`
--   `pnpm install`
--   `code <sample directory>` to open one of the sample projects
+-   `code <sample directory>` to open one of the sample projects, e.g. hello-world-sample
+-   `npm install`
 -   `npm run build` to build any of the sample projects if desired
+
+NOTE: You will not build this project from the root, instead going to each directory and installing and building there. It is suggested to use these as templates and add them to your projects instead of attempting to deploy them to your instance directly from here.
 
 ## Samples
 
 <!-- SAMPLES_BEGIN -->
 
-| Sample Name                                   | API & Contribution       |
-| --------------------------------------------- | ------------------------ |
-| [Hello World](hello-world-sample/README.md)   | Basic sample application |
-| [Tables](table-sample/README.md)              | Tables API sample        |
-| [Scripted Rest API](restapi-sample/README.md) | RestApi simple example   |
-
+| Sample Name                                           | API & Contribution             |
+| ----------------------------------------------------- | ------------------------------ |
+| [Application Menu](applicationmenu-sample/README.md)  | Application Menu example       |
+| [Business Rule](businessrule-sample/README.md)        | Business Rule example          |
+| [Client Script](clientscript-sample/README.md)        | Client Script example          |
+| [Dependencies](dependencies-sample/README.md)         | Use table dependencies example |
+| [Hello World](hello-world-sample/README.md)           | Basic sample application       |
+| [List](list-sample/README.md)                         | List example                   |
+| [Scripted Rest API](restapi-sample/README.md)         | RestApi simple example         |
+| [Cross-Scope Module](sys_module-sample/README.md)     | How to call module cross-scope |
+| [Record](record-sample/README.md)                     | Record example                 |
+| [Tables](table-sample/README.md)                      | Tables API sample              |
+| [Automated Test Framework](test-atf-sample/README.md) | ATF test sample                |
 <!-- SAMPLES_END -->
