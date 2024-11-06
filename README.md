@@ -15,6 +15,8 @@ You need to have [node](https://nodejs.org/en/) v20+ to run the examples.
 -   `npm install`
 -   `npm run build` to build any of the sample projects if desired
 
+NOTE: You will not build this project from the root, instead going to each directory and installing and building there. It is suggested to use these as templates and add them to your projects instead of attempting to deploy them to your instance directly from here.
+
 ## Samples
 
 <!-- SAMPLES_BEGIN -->

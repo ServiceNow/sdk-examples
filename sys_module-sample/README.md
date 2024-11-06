@@ -3,7 +3,7 @@
 These examples show two techniques to call a module cross-scope.
 
 ## Expose a class
-Sample Class demonstrates creating a server side script to expost and wrap a module in a class so that it can be used similarly to traditional script includes. 
+Sample Class demonstrates creating a server side script to expose and wrap a module in a class so that it can be used similarly to traditional script includes. 
 
 ```javascript
 var sample = new SampleClass();
