@@ -14,7 +14,9 @@ Record({
         mobile_callable: false,
         name: 'SampleClass',
         sandbox_callable: false,
-        script: "const sinc = require('./src/server/sample-class.js'); var SampleClass = sinc.SampleClass;",
+        script: script`const sinc = require('./dist/server/sample-class.js'); 
+var SampleClass = sinc.SampleClass;
+`,
         sys_name: 'SampleClass',
     },
 })
