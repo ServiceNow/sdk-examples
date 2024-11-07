@@ -2,6 +2,6 @@
   "scope": "x_br_sample",
   "scopeId": "fc1b5713c3db3110d6489a038a40dd84",
   "modulePaths": {
-    "src/server/*.ts": "dist/server/*.js"
+    "src/*.ts": "dist/*.js"
   }
 }
