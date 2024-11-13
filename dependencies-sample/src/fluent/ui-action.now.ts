@@ -6,6 +6,7 @@ const action = Record({
     $id: Now.ID['edit_in_catalog_builder'],
     table: 'sys_ui_action',
     data: {
+        table: 'sc_cat_item',
         action_name: 'edit_in_catalog_builder',
         name: 'Edit in Catalog Builder',
         order: 600,
@@ -20,20 +21,20 @@ const action = Record({
         onclick: script`openItemInCatalogBuilder()`,
         condition: script`new global.ServiceCatalogVersioningUtils().canEditInBuilder(current)`,
         script: script`
-          function openItemInCatalogBuilder() {
-            var checkoutUtil = new GlideAjax('ServiceCatalogVersioningUtils');
-            checkoutUtil.addParam('sysparm_name','checkoutItem');
-            checkoutUtil.addParam('itemId', g_form.getUniqueValue());
-            checkoutUtil.getXMLAnswer(navigateToBuilder);
-          }
-          
-          function navigateToBuilder(url) {
-            if (url) {
-              g_navigation.openPopup(url);
-              g_navigation.reloadWindow();
-            }
-          
-          }`,
+function openItemInCatalogBuilder() {
+  var checkoutUtil = new GlideAjax('ServiceCatalogVersioningUtils');
+  checkoutUtil.addParam('sysparm_name','checkoutItem');
+  checkoutUtil.addParam('itemId', g_form.getUniqueValue());
+  checkoutUtil.getXMLAnswer(navigateToBuilder);
+}
+
+function navigateToBuilder(url) {
+  if (url) {
+    g_navigation.openPopup(url);
+    g_navigation.reloadWindow();
+  }
+
+}`,
     },
 })
 

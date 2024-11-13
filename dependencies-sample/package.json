@@ -1,14 +1,16 @@
 {
     "name": "dependencies-sample",
     "version": "1.0.0",
-    "description": "",
+    "description": "Application to demonstrate the usage of Dependencies with Now-SDK and Fluent.",
     "keywords": [],
     "author": "ServiceNow",
     "license": "ISC",
     "scripts": {
         "build": "now-sdk build",
         "fetch": "now-sdk fetch",
-        "dependencies": "now-sdk dependencies"
+        "deploy": "now-sdk deploy",
+        "dependencies": "now-sdk dependencies",
+        "bd": "npm run build && npm run deploy"
     },
     "devDependencies": {
         "@servicenow/sdk": "^2.1.3",
