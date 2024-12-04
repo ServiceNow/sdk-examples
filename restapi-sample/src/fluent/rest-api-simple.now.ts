@@ -9,7 +9,7 @@ import { RestApi } from '@servicenow/sdk/core'
 RestApi({
     $id: Now.ID['restapi-hello'],
     name: 'rest api fluent sample',
-    service_id: 'restapi-hello',
+    service_id: 'restapi_hello',
     consumes: 'application/json',
     routes: [
         {
@@ -18,8 +18,8 @@ RestApi({
             method: 'GET',
             script: script`
               (function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-                return { message: 'Hello, World!' }
-              })
+                response.setBody({ message: 'Hello, World!' })
+              })(request, response)
             `,
         },
         {
@@ -28,8 +28,12 @@ RestApi({
             method: 'POST',
             script: script`
               (function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-                return { post: { ...request.body } }
-              })
+				            var reqbody = request.body.dataString;
+                    var parser = new global.JSON();
+                    var parsedData = parser.decode(reqbody);
+                    
+                    response.setBody({ post: parsedData })
+              })(request, response)
             `,
         },
         {
@@ -38,8 +42,12 @@ RestApi({
             method: 'PUT',
             script: script`
               (function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-                return { put: { ...request.body } }
-              })
+                var reqbody = request.body.dataString;
+                var parser = new global.JSON();
+                var parsedData = parser.decode(reqbody);
+                
+                response.setBody({ put: parsedData })
+              })(request, response)
             `,
         },
         {
@@ -48,8 +56,8 @@ RestApi({
             method: 'DELETE',
             script: script`
               (function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-                return { delete: { ...request.body } }
-              })
+                response.setBody({ delete: { msg: "DELETED" } })
+              })(request, response)
             `,
         },
     ],
