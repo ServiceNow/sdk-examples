@@ -10,7 +10,7 @@
         "fetch": "now-sdk fetch"
     },
     "devDependencies": {
-        "@servicenow/sdk": "^2.1.3",
+        "@servicenow/sdk": "^2.2.6",
         "typescript": "^5.5.2"
     }
 }
