@@ -1,4 +1,4 @@
-import { gs, GlideRecord } from '@servicenow/glide'
+import { gs } from '@servicenow/glide'
 
 export function businessRuleProcess(current: any, previous: any) {
     // Add your code here

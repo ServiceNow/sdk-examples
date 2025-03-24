@@ -7,13 +7,10 @@
     "license": "ISC",
     "scripts": {
         "build": "now-sdk build",
-        "fetch": "now-sdk fetch",
-        "deploy": "now-sdk deploy",
-        "dependencies": "now-sdk dependencies",
-        "bd": "npm run build && npm run deploy"
+        "types": "now-sdk dependencies"
     },
     "devDependencies": {
-        "@servicenow/sdk": "^2.2.6",
-        "typescript": "5.5.2"
+        "@servicenow/sdk": "catalog:",
+        "typescript": "catalog:"
     }
 }

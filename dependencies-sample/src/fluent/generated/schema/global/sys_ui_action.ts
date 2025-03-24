@@ -118,9 +118,9 @@ export const sys_ui_action = Table({
             maxLength: 40,
             dropdown: 'dropdown_with_none',
             choices: {
-                destructive: { label: 'Destructive', sequence: 2, inactive: false, language: 'en' },
                 unstyled: { label: 'Unstyled', sequence: 3, inactive: false, language: 'en' },
                 primary: { label: 'Primary', sequence: 1, inactive: false, language: 'en' },
+                destructive: { label: 'Destructive', sequence: 2, inactive: false, language: 'en' },
             },
         }),
         format_for_configurable_workspace: BooleanColumn({
@@ -209,9 +209,9 @@ export const sys_ui_action = Table({
             maxLength: 40,
             dropdown: 'dropdown_with_none',
             choices: {
-                unstyled: { label: 'Unstyled', sequence: 3, inactive: false, language: 'en' },
                 primary: { label: 'Primary', sequence: 1, inactive: false, language: 'en' },
                 destructive: { label: 'Destructive', sequence: 2, inactive: false, language: 'en' },
+                unstyled: { label: 'Unstyled', sequence: 3, inactive: false, language: 'en' },
             },
         }),
         messages: StringColumn({

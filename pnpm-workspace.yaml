@@ -1,0 +1,7 @@
+packages:
+    - '*-sample'
+
+catalog:
+    typescript: 5.8.2
+    '@servicenow/sdk': 3.0.0
+    '@servicenow/glide': 26.0.1

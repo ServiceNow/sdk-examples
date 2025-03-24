@@ -6,12 +6,11 @@
     "author": "ServiceNow",
     "license": "ISC",
     "scripts": {
-        "build": "now-sdk build",
-        "fetch": "now-sdk fetch"
+        "build": "now-sdk build"
     },
     "devDependencies": {
         "@servicenow/glide": "^26.0.1",
-        "@servicenow/sdk": "^2.2.6",
-        "typescript": "5.5.2"
+        "@servicenow/sdk": "catalog:",
+        "typescript": "catalog:"
     }
 }

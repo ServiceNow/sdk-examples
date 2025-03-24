@@ -13,16 +13,16 @@ Test(
         $id: Now.ID[1],
     },
     (atf) => {
-        atf.form.openNewForm({ table: 'incident', view: '', formUI: 'standard_ui' })
-        atf.form.setFieldValue({ fieldValues: { short_description: 'test' }, formUI: 'standard_ui', table: 'incident' })
-        const step3 = atf.form.submitForm({ formUI: 'standard_ui', assertType: 'form_submitted_to_server' })
-        atf.form.openExistingRecord({
+        atf.form.openNewForm({ $id: 'step1', table: 'incident', view: '', formUI: 'standard_ui' })
+        atf.form.setFieldValue({ $id: 'step2', fieldValues: { short_description: 'test' }, formUI: 'standard_ui', table: 'incident' })
+        const step3 = atf.form.submitForm({ $id: 'step3', formUI: 'standard_ui', assert: 'form_submitted_to_server' })
+        atf.form.openExistingRecord({ $id: 'step4',
             formUI: 'standard_ui',
             recordId: step3.record_id,
             selectedTabIndex: 1,
             table: 'incident',
             view: '',
         })
-        atf.server.log({ log: `Finished opening a record with ${step3.record_id} as an id` })
+        atf.server.log({ $id: 'ste5', log: `Finished opening a record with ${step3.record_id} as an id` })
     }
 )

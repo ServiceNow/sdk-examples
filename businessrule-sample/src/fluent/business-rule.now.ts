@@ -21,5 +21,6 @@ BusinessRule({
     active: true,
     table: 'sc_req_item',
     when: 'before',
+    //@fluent-ignore
     script: businessRuleProcess,
 })

@@ -74,8 +74,8 @@ export const sys_metadata = Table({
             maxLength: 40,
             dropdown: 'dropdown_with_none',
             choices: {
-                read: { label: 'Read-only', sequence: 1, inactive: false, language: 'en' },
                 protected: { label: 'Protected', sequence: 2, inactive: false, language: 'en' },
+                read: { label: 'Read-only', sequence: 1, inactive: false, language: 'en' },
             },
         }),
         sys_scope: ReferenceColumn({

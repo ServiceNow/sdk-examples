@@ -9,13 +9,15 @@ export default Test(
         name: 'Get Newly Created Resource via REST API Test',
     },
     (atf) => {
-        atf.server.recordInsert({
-            assertType: 'record_successfully_inserted',
+        atf.server.recordInsert({ 
+            $id: 'step1',
+            assert: 'record_successfully_inserted',
             enforceSecurity: false,
             fieldValues: { short_description: 'REST Test Incident' },
             table: 'incident',
         })
         atf.rest.sendRestRequest({
+            $id: 'step2',
             basicAuthentication: '',
             body: '',
             headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
@@ -23,9 +25,10 @@ export default Test(
             path: "/api/now/v2/table/incident/{{step['d42bb7229f703200ef4afa7dc67fcf46'].record_id}}",
             queryParameters: {},
         })
-        atf.rest.assertStatusCode({ operation: 'equals', statusCode: 200 })
-        atf.rest.assertResponseJSONPayloadIsValid({})
-        atf.rest.assertJsonResponsePayloadElement({
+        atf.rest.assertStatusCode({  $id: 'step3', operation: 'equals', statusCode: 200 })
+        atf.rest.assertResponseJSONPayloadIsValid({ $id: 'step4',})
+        atf.rest.assertJsonResponsePayloadElement({ 
+            $id: 'step5',
             elementName: '/result/short_description',
             elementValue: 'REST Test Incident',
             operation: 'equals',

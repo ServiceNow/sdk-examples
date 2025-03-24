@@ -11,6 +11,7 @@ import {
     IntegerColumn,
     ChoiceColumn,
     UserRolesColumn,
+    ListColumn,
 } from '@servicenow/sdk/core'
 export const sc_cat_item = Table({
     name: 'sc_cat_item',
@@ -25,8 +26,8 @@ export const sc_cat_item = Table({
             maxLength: 40,
             dropdown: 'dropdown_without_none',
             choices: {
-                delegated: { label: 'Delegated', sequence: 1, inactive: false, language: 'en' },
                 restricted: { label: 'Restricted', sequence: 2, inactive: false, language: 'en' },
+                delegated: { label: 'Delegated', sequence: 1, inactive: false, language: 'en' },
             },
         }),
         active: BooleanColumn({
@@ -156,10 +157,10 @@ export const sc_cat_item = Table({
             maxLength: 40,
             dropdown: 'dropdown_without_none',
             choices: {
-                fully_automated: { label: 'Fully automated', sequence: 3, inactive: false, language: 'en' },
-                unspecified: { label: 'Unspecified', sequence: 0, inactive: false, language: 'en' },
                 manual: { label: 'Manual', sequence: 1, inactive: false, language: 'en' },
                 semi_automated: { label: 'Semi-automated', sequence: 2, inactive: false, language: 'en' },
+                fully_automated: { label: 'Fully automated', sequence: 3, inactive: false, language: 'en' },
+                unspecified: { label: 'Unspecified', sequence: 0, inactive: false, language: 'en' },
             },
         }),
         group: ReferenceColumn({
@@ -460,20 +461,20 @@ export const sc_cat_item = Table({
             maxLength: 40,
             dropdown: 'dropdown_with_none',
             choices: {
-                submit: { label: 'Submit', sequence: 3, inactive: false, language: 'en' },
                 NULL_OVERRIDE: { label: 'Order', sequence: 1, inactive: false, language: 'en' },
                 request: { label: 'Request', sequence: 2, inactive: false, language: 'en' },
+                submit: { label: 'Submit', sequence: 3, inactive: false, language: 'en' },
             },
         }),
         roles: UserRolesColumn({ mandatory: false, label: 'Roles', read_only: false, active: true, maxLength: 255 }),
-        sc_catalogs: GenericColumn({
+        sc_catalogs: ListColumn({
+            referenceTable: 'sc_catalog',
             mandatory: false,
             label: 'Catalogs',
             read_only: false,
             active: true,
             default: 'javascript:SNC.Catalog.getDefaultCatalog();',
             maxLength: 4000,
-            column_type: 'glide_list',
         }),
         sc_ic_item_staging: ReferenceColumn({
             mandatory: false,
@@ -528,11 +529,11 @@ export const sc_cat_item = Table({
             maxLength: 40,
             dropdown: 'dropdown_with_none',
             choices: {
-                reviewed: { label: 'Reviewed', sequence: 5, inactive: false, language: 'en' },
+                in_review: { label: 'In review', sequence: 4, inactive: false, language: 'en' },
                 published: { label: 'Published', sequence: 1, inactive: false, language: 'en' },
+                reviewed: { label: 'Reviewed', sequence: 5, inactive: false, language: 'en' },
                 draft: { label: 'Draft', sequence: 2, inactive: false, language: 'en' },
                 publishing: { label: 'Publishing', sequence: 3, inactive: false, language: 'en' },
-                in_review: { label: 'In review', sequence: 4, inactive: false, language: 'en' },
             },
         }),
         sys_id: GenericColumn({
@@ -578,8 +579,8 @@ export const sc_cat_item = Table({
                 task: { label: 'Task', sequence: 2, inactive: false, language: 'en' },
                 bundle: { label: 'Bundle', sequence: 3, inactive: false, language: 'en' },
                 template: { label: 'Template', sequence: 4, inactive: false, language: 'en' },
-                item: { label: 'Item', sequence: 1, inactive: false, language: 'en' },
                 package: { label: 'Package', sequence: 5, inactive: false, language: 'en' },
+                item: { label: 'Item', sequence: 1, inactive: false, language: 'en' },
             },
         }),
         use_sc_layout: BooleanColumn({

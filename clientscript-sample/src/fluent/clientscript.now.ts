@@ -11,5 +11,5 @@ export default ClientScript({
     applies_extended: false,
     description: 'sample client script',
     isolate_script: false,
-    script: script`function onLoad(){ console.log("execute this code") }`,
+    script: Now.include('./clientscript.client.js')
 })

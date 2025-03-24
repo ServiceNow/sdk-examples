@@ -7,11 +7,9 @@
     "sourceType": "module"
   },
   "plugins": [
-    "n",
-    "@servicenow/sdk-app-plugin"
+    "n"
   ],
   "extends": [
-    "plugin:@servicenow/sdk-app-plugin/recommended",
     "prettier"
   ]
 }

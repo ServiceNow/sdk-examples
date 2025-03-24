@@ -7,8 +7,8 @@ export const x_helloworld_tableone = Table({
     name: 'x_helloworld_tableone',
     label: 'Example Table',
     schema: {
-        string_field: StringColumn({ mandatory: true }),
-        integer_field: IntegerColumn({ mandatory: true }),
-        datetime_field: DateTimeColumn({}),
+        string_field: StringColumn({ label: 'String Field', mandatory: true }),
+        integer_field: IntegerColumn({ label: 'Integer Field', mandatory: true }),
+        datetime_field: DateTimeColumn({ label: 'Date Time Field' }),
     },
 })

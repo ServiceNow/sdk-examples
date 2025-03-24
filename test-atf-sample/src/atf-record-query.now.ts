@@ -9,8 +9,8 @@ export default Test(
         name: 'AWA: Check Configuration',
     },
     (atf) => {
-        atf.server.recordQuery({
-            assertType: 'records_match_query',
+        atf.server.recordQuery({ $id: 'step1',
+            assert: 'records_match_query',
             enforceSecurity: false,
             fieldValues: 'active=true^EQ',
             table: 'awa_service_channel',

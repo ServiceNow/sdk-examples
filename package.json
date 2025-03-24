@@ -8,8 +8,7 @@
     "scripts": {
         "eslint": "eslint",
         "prettier": "prettier --check",
-        "build": "cd applicationmenu-sample && npm run build && cd ../businessrule-sample && npm run build && cd ../clientscript-sample && npm run build && cd ../dependencies-sample && npm run build && cd ../hello-world-sample && npm run build && cd ../list-sample && npm run build && cd ../record-sample && npm run build && cd ../restapi-sample && npm run build && cd ../sys_module-sample && npm run build && cd ../table-sample && npm run build && cd ../test-atf-sample && npm run build && cd ..",
-        "install": "cd applicationmenu-sample && npm install && cd ../businessrule-sample && npm install && cd ../clientscript-sample && npm install && cd ../dependencies-sample && npm install && cd ../hello-world-sample && npm install && cd ../list-sample && npm install && cd ../record-sample && npm install && cd ../restapi-sample && npm install && cd ../sys_module-sample && npm install && cd ../table-sample && npm install && cd ../test-atf-sample && npm install && cd .."
+        "build": "pnpm -r build"
     },
     "engines": {
         "node": ">=20",

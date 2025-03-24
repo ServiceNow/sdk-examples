@@ -13,9 +13,9 @@ Test(
         name: 'Multi-Batch Test',
     },
     (atf) => {
-        atf.server.impersonate({ user: 'd8f57f140b20220050192f15d6673a98' })
-        atf.form.openNewForm({ table: 'sys_user', view: 'itil', formUI: 'standard_ui' })
-        atf.form.fieldStateValidation({
+        atf.server.impersonate({ $id: 'step1', user: 'd8f57f140b20220050192f15d6673a98' })
+        atf.form.openNewForm({ $id: 'step2', table: 'sys_user', view: 'itil', formUI: 'standard_ui' })
+        atf.form.fieldStateValidation({ $id: 'step3',
             formUI: 'standard_ui',
             mandatory: [],
             notMandatory: ['first_name', 'last_name'],
@@ -25,14 +25,14 @@ Test(
             table: 'sys_user',
             visible: [],
         })
-        atf.form.setFieldValue({
+        atf.form.setFieldValue({ $id: 'step4',
             fieldValues: { first_name: 'Emily', last_name: 'Employee' },
             formUI: 'standard_ui',
             table: 'sys_user',
         })
-        atf.form.submitForm({ formUI: 'standard_ui', assertType: 'form_submitted_to_server' })
-        atf.form.openNewForm({ table: 'sc_task', view: '', formUI: 'standard_ui' })
-        atf.form.setFieldValue({
+        atf.form.submitForm({ $id: 'step5', formUI: 'standard_ui', assert: 'form_submitted_to_server' })
+        atf.form.openNewForm({ $id: 'step6', table: 'sc_task', view: '', formUI: 'standard_ui' })
+        atf.form.setFieldValue({ $id: 'step7',
             fieldValues: {
                 short_description: 'This is my second UI Batch',
                 description: 'It is separated by the server side step. But each step will still run in order.',
@@ -40,6 +40,6 @@ Test(
             formUI: 'standard_ui',
             table: 'sc_task',
         })
-        atf.form.submitForm({ formUI: 'standard_ui', assertType: 'form_submitted_to_server' })
+        atf.form.submitForm({ $id: 'step8', formUI: 'standard_ui', assert: 'form_submitted_to_server' })
     }
 )
