@@ -1,7 +1,6 @@
 .DS_Store
 *.iml
 *.tsbuildinfo
-pnpm-lock.yaml
 .now/
 dist
 node_modules
