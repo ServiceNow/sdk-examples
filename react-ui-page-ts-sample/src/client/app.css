@@ -1,0 +1,62 @@
+.incident-app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.app-header h1 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.create-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.create-button:hover {
+    background-color: #45a049;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #666;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #d32f2f;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border-left: 4px solid #d32f2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-message button {
+    background: none;
+    border: none;
+    color: #d32f2f;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}

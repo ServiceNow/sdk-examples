@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2021"
+    ],
+    "noEmit": true,
+    "checkJs": false,
+    "allowJs": true,
+    "noEmitHelpers": true,
+    "esModuleInterop": false,
+    "module": "None",
+    "types": []
+  },
+  "include": [
+    "./**/*.server.js",
+    "../../@types/servicenow/*.server.d.ts",
+  ]
+}

@@ -7,14 +7,13 @@ This repository contains sample code illustrating the [ServiceNow SDK](https://d
 ## Prerequisites
 
 - [node](https://nodejs.org/en/) v20+
-- [pnpm](https://pnpm.io/)
 
 ## Usage
 
 - `git clone https://github.com/ServiceNow/sdk-examples`
-- `pnpm install`
+- `npm run i` to install all dependencies on samples (optional can run individually)
 - `code <sample directory>` to open one of the sample projects, e.g. hello-world-sample
-- `pnpm run build` to build any of the sample projects if desired
+- `npm run build` to build any of the sample projects if desired
 
 ## Samples
 
@@ -33,5 +32,6 @@ This repository contains sample code illustrating the [ServiceNow SDK](https://d
 | [Record](record-sample/README.md)                     | Record example                 |
 | [Tables](table-sample/README.md)                      | Tables API sample              |
 | [Automated Test Framework](test-atf-sample/README.md) | ATF test sample                |
+| [React UI Page Typescript](test-atf-sample/README.md) | React Typescript sample        |
 
 <!-- SAMPLES_END -->

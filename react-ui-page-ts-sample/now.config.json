@@ -1,0 +1,6 @@
+{
+  "scope": "x_reactuisample",
+  "scopeId": "d784d194f0f74d0783f07bb902f227a7",
+  "name": "React UI Example",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}
