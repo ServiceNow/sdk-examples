@@ -1,8 +1,5 @@
 {
   "scope": "x_br_sample",
   "scopeId": "fc1b5713c3db3110d6489a038a40dd84",
-  "serverModulesDir": "src/server",
-  "modulePaths": {
-    "src/*.ts": "dist/*.js"
-  }
+  "serverModulesDir": "src/server"
 }

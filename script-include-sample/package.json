@@ -1,0 +1,17 @@
+{
+    "name": "script-include-sample",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [],
+    "author": "ServiceNow",
+    "license": "ISC",
+    "scripts": {
+        "build": "now-sdk build",
+        "types": "now-sdk dependencies"
+    },
+    "devDependencies": {
+        "@servicenow/glide": "26.0.1",
+        "@servicenow/sdk": "4.0.0",
+        "typescript": "5.8.2"
+    }
+}

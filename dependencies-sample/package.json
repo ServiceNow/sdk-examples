@@ -10,7 +10,7 @@
         "types": "now-sdk dependencies"
     },
     "devDependencies": {
-        "@servicenow/sdk": "catalog:",
-        "typescript": "catalog:"
+        "@servicenow/sdk": "4.0.0",
+        "typescript": "5.8.2"
     }
 }

@@ -1,0 +1,6 @@
+{
+  "scope": "x_uisample",
+  "scopeId": "10228342098844da9150817cc5daf18d",
+  "name": "UI Sample",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}
