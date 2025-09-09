@@ -1,0 +1,11 @@
+{
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["n","@servicenow/sdk-app-plugin"],
+  "extends": ["plugin:@servicenow/sdk-app-plugin/recommended"]
+}
