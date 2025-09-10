@@ -1,0 +1,6 @@
+{
+    "scope": "x_vueuisample",
+    "scopeId": "98946933dbf2415faf7cc63cbc2e2f16",
+    "name": "Vue UI Example",
+    "tsconfigPath": "./src/server/tsconfig.json"
+}
