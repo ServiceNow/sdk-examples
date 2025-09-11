@@ -1,0 +1,20 @@
+<!-- Set DOCTYPE to html to avoid quirks mode -->
+<g:evaluate>
+  var docType =
+  String.fromCharCode(60,33,68,79,67,84,89,80,69,32,104,116,109,108,62);
+</g:evaluate>
+<g2:no_escape>$[docType]</g2:no_escape>
+<html>
+  <head>
+    <title>Incident Response Manager</title>
+
+    <!-- Initialize globals and Include ServiceNow's required scripts -->
+    <sdk:now-ux-globals></sdk:now-ux-globals>
+
+    <!-- Include your React entry point -->
+    <script src="./main.tsx" type="module"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
