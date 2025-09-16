@@ -21,6 +21,7 @@ This repository contains sample code illustrating the [ServiceNow SDK](https://d
 
 | Sample Name                                           | API & Contribution             |
 | ----------------------------------------------------- | ------------------------------ |
+| [ACL](acl-sample/README.md)  | ACL example       |
 | [Application Menu](applicationmenu-sample/README.md)  | Application Menu example       |
 | [Business Rule](businessrule-sample/README.md)        | Business Rule example          |
 | [Client Script](clientscript-sample/README.md)        | Client Script example          |
