@@ -4,7 +4,7 @@
     "description": "",
     "license": "UNLICENSED",
     "scripts": {
-        "build": "now-sdk build --prebuild ./build/solid-prebuild.mjs",
+        "build": "now-sdk build",
         "deploy": "now-sdk install",
         "yolo": "npm run build && npm run deploy",
         "transform": "now-sdk transform",
