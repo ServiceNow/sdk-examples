@@ -9,7 +9,7 @@ export class IncidentService {
     private readonly tableName: string
 
     constructor() {
-        this.tableName = 'x_sepa_work2_incident'
+        this.tableName = 'x_solidjs_example_incident'
     }
 
     // Return all incidents
