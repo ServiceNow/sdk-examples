@@ -19,20 +19,20 @@ This repository contains sample code illustrating the [ServiceNow SDK](https://d
 
 <!-- SAMPLES_BEGIN -->
 
-| Sample Name                                           | API & Contribution             |
-| ----------------------------------------------------- | ------------------------------ |
-| [ACL](acl-sample/README.md)  | ACL example       |
-| [Application Menu](applicationmenu-sample/README.md)  | Application Menu example       |
-| [Business Rule](businessrule-sample/README.md)        | Business Rule example          |
-| [Client Script](clientscript-sample/README.md)        | Client Script example          |
-| [Dependencies](dependencies-sample/README.md)         | Use table dependencies example |
-| [Hello World](hello-world-sample/README.md)           | Basic sample application       |
-| [List](list-sample/README.md)                         | List example                   |
-| [Scripted Rest API](restapi-sample/README.md)         | RestApi simple example         |
-| [Cross-Scope Module](sys_module-sample/README.md)     | How to call module cross-scope |
-| [Record](record-sample/README.md)                     | Record example                 |
-| [Tables](table-sample/README.md)                      | Tables API sample              |
-| [Automated Test Framework](test-atf-sample/README.md) | ATF test sample                |
-| [React UI Page Typescript](test-atf-sample/README.md) | React Typescript sample        |
+| Sample Name                                                   | API & Contribution             |
+| ------------------------------------------------------------- | ------------------------------ |
+| [ACL](acl-sample/README.md)                                   | ACL example                    |
+| [Application Menu](applicationmenu-sample/README.md)          | Application Menu example       |
+| [Business Rule](businessrule-sample/README.md)                | Business Rule example          |
+| [Client Script](clientscript-sample/README.md)                | Client Script example          |
+| [Dependencies](dependencies-sample/README.md)                 | Use table dependencies example |
+| [Hello World](hello-world-sample/README.md)                   | Basic sample application       |
+| [List](list-sample/README.md)                                 | List example                   |
+| [Scripted Rest API](restapi-sample/README.md)                 | RestApi simple example         |
+| [Cross-Scope Module](sys_module-sample/README.md)             | How to call module cross-scope |
+| [Record](record-sample/README.md)                             | Record example                 |
+| [Tables](table-sample/README.md)                              | Tables API sample              |
+| [Automated Test Framework](test-atf-sample/README.md)         | ATF test sample                |
+| [React UI Page Typescript](react-ui-page-ts-sample/README.md) | React Typescript sample        |
 
 <!-- SAMPLES_END -->
