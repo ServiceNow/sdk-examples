@@ -2,8 +2,8 @@ import '@servicenow/sdk/global'
 import { Table, StringColumn, DateTimeColumn, IntegerColumn } from '@servicenow/sdk/core'
 
 // Create the incident table for our application
-export const x_sepa_work2_incident = Table({
-    name: 'x_sepa_work2_incident',
+export const x_solidjs_example_incident = Table({
+    name: 'x_solidjs_example_incident',
     label: 'Incident',
     schema: {
         number: StringColumn({ 
