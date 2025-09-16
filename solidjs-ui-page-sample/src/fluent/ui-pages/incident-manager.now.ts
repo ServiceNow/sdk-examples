@@ -4,7 +4,7 @@ import incidentPage from '../../client/index.html'
 
 UiPage({
     $id: Now.ID['incident-manager-page'],
-    endpoint: 'x_sepa_work2_incident_manager.do',
+    endpoint: 'x_solidjs_example_incident_manager.do',
     description: 'Incident Response Manager UI Page',
     category: 'general',
     html: incidentPage,
