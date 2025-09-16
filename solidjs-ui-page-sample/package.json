@@ -1,0 +1,26 @@
+{
+    "name": "solidjs-ui-page-ts-example",
+    "version": "0.0.1",
+    "description": "",
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "now-sdk build",
+        "deploy": "now-sdk install",
+        "yolo": "npm run build && npm run deploy",
+        "transform": "now-sdk transform",
+        "types": "now-sdk dependencies"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.28.4",
+        "@babel/preset-typescript": "^7.27.1",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@servicenow/eslint-plugin-sdk-app-plugin": "4.0.0",
+        "@servicenow/glide": "26.0.1",
+        "@servicenow/isomorphic-rollup": "^1.2.1",
+        "@servicenow/sdk": "4.0.0",
+        "babel-preset-solid": "^1.9.9",
+        "eslint": "8.50.0",
+        "solid-js": "^1.9.9",
+        "typescript": "5.5.4"
+    }
+}

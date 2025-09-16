@@ -1,0 +1,7 @@
+{
+    "scope": "x_solidjs_example",
+    "scopeId": "8797724224f147678de446fc6dfedfde",
+    "name": "SolidJS Example",
+    "tsconfigPath": "./src/server/tsconfig.json"
+}
+
