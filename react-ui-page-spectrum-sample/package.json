@@ -1,0 +1,25 @@
+{
+    "name": "react-ui-page-spectrum-sample",
+    "version": "0.0.1",
+    "description": "",
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "now-sdk build -d",
+        "deploy": "now-sdk install",
+        "transform": "now-sdk transform",
+        "types": "now-sdk dependencies"
+    },
+    "devDependencies": {
+        "@servicenow/glide": "26.0.1",
+        "@servicenow/sdk": "4.0.1",
+        "typescript": "5.8.2",
+        "eslint": "8.50.0",
+        "@servicenow/eslint-plugin-sdk-app-plugin": "4.0.1",
+        "@servicenow/isomorphic-rollup": "^1.2.3",
+        "@types/react": "18.x",
+        "@types/react-dom": "18.x",
+        "react": "18.x",
+        "react-dom": "18.x",
+        "@adobe/react-spectrum": "3.32.2"
+    }
+}
