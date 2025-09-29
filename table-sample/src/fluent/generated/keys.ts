@@ -28,6 +28,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '078ff73575d94307840e2fe7af057a43'
+                        key: {
+                            name: 'incident'
+                            element: 'x_tablesample_custom_column'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '0f068a83a379405ab9666b368d5cdad2'
                         key: {
@@ -41,6 +50,15 @@ declare global {
                         key: {
                             name: 'x_tablesample_name'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '1d978ee513db4875ba9c4c0c2f2afd13'
+                        key: {
+                            name: 'incident'
+                            element: 'NULL'
+                            language: 'en'
                         }
                     },
                     {
@@ -128,6 +146,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'ua_table_licensing_config'
+                        id: '547bef06719c47ca9516f14ba188c136'
+                        key: {
+                            name: 'incident'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '597b1644239d48d7808a1985410b47cc'
                         key: {
@@ -200,6 +225,13 @@ declare global {
                             name: 'x_tablesample_index'
                             element: 'active'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '818734495fef41b8a2246520fe48053e'
+                        key: {
+                            name: 'incident'
                         }
                     },
                     {
@@ -297,6 +329,14 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: 'd1a37510e8e24328beb10d603c890eb4'
+                        key: {
+                            name: 'incident'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: 'd70ff35308d34e08a97310d854fbe3f5'
                         key: {
                             name: 'x_tablesample_index'
@@ -309,6 +349,14 @@ declare global {
                         key: {
                             category: 'x_tablesample_extends'
                             prefix: 'sample'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'eae28c14c83a468aa8c357fc25877137'
+                        key: {
+                            name: 'incident'
+                            element: 'x_tablesample_custom_column'
                         }
                     },
                     {
