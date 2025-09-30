@@ -31,7 +31,7 @@ export default async ({ rootDir, config, fs, path, logger, registerExplicitId })
         // configured for the scope name and root directory
         plugins: servicenowFrontEndPlugins({
             scope: config.scope,
-            rootDir: clientDir,
+            rootDir,
             registerExplicitId,
         }),
     })
