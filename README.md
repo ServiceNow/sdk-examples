@@ -34,5 +34,10 @@ This repository contains sample code illustrating the [ServiceNow SDK](https://d
 | [Tables](table-sample/README.md)                              | Tables API sample              |
 | [Automated Test Framework](test-atf-sample/README.md)         | ATF test sample                |
 | [React UI Page Typescript](react-ui-page-ts-sample/README.md) | React Typescript sample        |
+| [Service Portal](service-portal-sample/README.md)             | Service Portal sample          |
+| [UI Action](uiaction-sample/README.md)                        | UiAction sample                |
+| [Script Action](scriptaction-sample/README.md)                | ScriptAction sample            |
+| [Script Include](script-include-sample/README.md)             | ScriptInclude sample           |
+| [UI Page](uipage-sample/README.md)                            | UiPage sample                  |
 
 <!-- SAMPLES_END -->
