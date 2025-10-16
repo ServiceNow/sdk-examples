@@ -10,9 +10,9 @@
         "types": "now-sdk dependencies"
     },
     "devDependencies": {
-        "@servicenow/sdk": "4.0.0-alpha.37",
+        "@servicenow/sdk": "4.0.2",
         "@servicenow/glide": "26.0.1",
         "eslint": "8.50.0",
-        "@servicenow/eslint-plugin-sdk-app-plugin": "4.0.0-alpha.37"
+        "@servicenow/eslint-plugin-sdk-app-plugin": "4.0.2"
     }
 }

@@ -10,7 +10,7 @@
     },
     "devDependencies": {
         "@servicenow/glide": "26.0.1",
-        "@servicenow/sdk": "4.0.1",
+        "@servicenow/sdk": "4.0.2",
         "typescript": "5.8.2"
     }
 }

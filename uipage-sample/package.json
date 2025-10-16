@@ -1,5 +1,5 @@
 {
-    "name": "service-portal-samples",
+    "name": "ui-page-sample",
     "version": "0.0.1",
     "description": "",
     "license": "UNLICENSED",
@@ -10,8 +10,9 @@
         "types": "now-sdk dependencies"
     },
     "devDependencies": {
-        "@servicenow/sdk": "4.0.2",
         "@servicenow/glide": "26.0.1",
+        "@servicenow/sdk": "4.0.2",
+        "typescript": "5.8.2",
         "eslint": "8.50.0",
         "@servicenow/eslint-plugin-sdk-app-plugin": "4.0.2"
     }
