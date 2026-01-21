@@ -46,6 +46,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: '3018b8a974ff4203bff67ad3afa9daf6'
+                        key: {
+                            name: 'x_solidjs_example_incident'
+                            element: 'priority'
+                        }
+                    },
+                    {
                         table: 'sys_number'
                         id: '351d1c06dce44538a739fb165bc86e07'
                         key: {
@@ -118,6 +126,14 @@ declare global {
                     {
                         table: 'sys_dictionary'
                         id: '62beb119411246b482de315208d48909'
+                        key: {
+                            name: 'x_solidjs_example_incident'
+                            element: 'status'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '675144a864144ec1ac9c5481bdd91fdf'
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'status'

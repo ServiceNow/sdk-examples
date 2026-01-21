@@ -28,6 +28,14 @@ declare global {
                 }
                 composite: [
                     {
+                        table: 'sys_choice_set'
+                        id: '0cf25cdcadb243e896b77f40e80229b8'
+                        key: {
+                            name: 'x_vueuisample_incident'
+                            element: 'priority'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '0e64757d8eb140f7be1ba7876c44ae65'
                         key: {
@@ -255,6 +263,14 @@ declare global {
                         id: 'de9d44812fe14f1cbcb43ed9cd14b9d9'
                         key: {
                             name: 'x_vueuisample_incident'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'e9bf8ca89ec046a7b2b48f63346e43a8'
+                        key: {
+                            name: 'x_vueuisample_incident'
+                            element: 'status'
                         }
                     },
                     {

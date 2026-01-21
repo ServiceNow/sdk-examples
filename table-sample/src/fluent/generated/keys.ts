@@ -312,6 +312,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: 'c800d68359944369847d3dc1c85e52d9'
+                        key: {
+                            name: 'x_tablesample_index'
+                            element: 'color'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: 'ce47b8b0edbc41858b69c9ec424ecc89'
                         key: {

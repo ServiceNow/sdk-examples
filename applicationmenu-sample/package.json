@@ -9,7 +9,7 @@
         "build": "now-sdk build"
     },
     "devDependencies": {
-        "@servicenow/sdk": "4.0.2",
+        "@servicenow/sdk": "4.2.0",
         "typescript": "5.8.2"
     }
 }
