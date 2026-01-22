@@ -37,6 +37,10 @@ declare global {
                         table: 'sys_module'
                         id: '08833d18db5244258499c6630ce2adb2'
                     }
+                    'sample-portal': {
+                        table: 'sp_portal'
+                        id: '4be6f6a064e6405982363ef42297999a'
+                    }
                     'sample-widget': {
                         table: 'sp_widget'
                         id: '58ddf4df40894f298a720955cc549b03'
