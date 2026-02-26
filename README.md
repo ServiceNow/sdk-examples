@@ -7,13 +7,14 @@ This repository contains sample code illustrating the [ServiceNow SDK](https://d
 ## Prerequisites
 
 - [node](https://nodejs.org/en/) v20+
+- [pnpm](https://pnpm.io/) v9+
 
 ## Usage
 
 - `git clone https://github.com/ServiceNow/sdk-examples`
-- `npm run i` to install all dependencies on samples (optional can run individually)
+- `pnpm install` to install all dependencies on samples (optional can run individually)
 - `code <sample directory>` to open one of the sample projects, e.g. hello-world-sample
-- `npm run build` to build any of the sample projects if desired
+- `pnpm run build` to build any of the sample projects if desired
 
 ## Samples
 

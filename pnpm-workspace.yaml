@@ -1,0 +1,8 @@
+packages:
+    - '*-sample'
+
+catalog:
+    '@servicenow/sdk': '4.3.0'
+    '@servicenow/glide': '27.0.4'
+    '@servicenow/eslint-plugin-sdk-app-plugin': '4.3.0'
+    typescript: '5.8.2'

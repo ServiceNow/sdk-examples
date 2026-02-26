@@ -9,8 +9,8 @@
         "build": "now-sdk build"
     },
     "devDependencies": {
-        "@servicenow/sdk": "4.2.0",
-        "@servicenow/glide": "27.0.3",
-        "typescript": "5.8.2"
+        "@servicenow/sdk": "catalog:",
+        "@servicenow/glide": "catalog:",
+        "typescript": "catalog:"
     }
 }
