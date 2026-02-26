@@ -1,0 +1,16 @@
+{
+    "name": "service-catalog-sample",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [],
+    "author": "ServiceNow",
+    "license": "ISC",
+    "scripts": {
+        "build": "now-sdk build"
+    },
+    "devDependencies": {
+        "@servicenow/glide": "catalog:",
+        "@servicenow/sdk": "catalog:",
+        "typescript": "catalog:"
+    }
+}
