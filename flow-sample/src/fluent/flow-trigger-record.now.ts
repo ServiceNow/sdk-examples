@@ -89,7 +89,7 @@ export const incidentSeverityAlertFlow = Flow(
                             action.core.sendSms,
                             { $id: Now.ID['send_sms_to_assignee_high'] },
                             {
-                                recipients: wfa.dataPill(assignee.Record.phone, 'string'),
+                                recipients: `${wfa.dataPill(assignee.Record.phone, 'string')}`,
                                 message: `High severity incident: ${wfa.dataPill(params.trigger.current.short_description, 'string')}`,
                             }
                         )
@@ -136,7 +136,7 @@ export const incidentSeverityAlertFlow = Flow(
                             action.core.sendSms,
                             { $id: Now.ID['send_sms_to_assignee_medium'] },
                             {
-                                recipients: wfa.dataPill(assignee.Record.phone, 'string'),
+                                recipients: `${wfa.dataPill(assignee.Record.phone, 'string')}`,
                                 message: `Medium severity incident: ${wfa.dataPill(params.trigger.current.short_description, 'string')}`,
                             }
                         )

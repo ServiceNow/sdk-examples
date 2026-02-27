@@ -87,58 +87,55 @@ export const emailIncidentTaskFlow = Flow(
         )
 
         // External / non-P1 path — P3 incident + copy attachments
-        wfa.flowLogic.else(
-            { $id: Now.ID['create_p3_incident_branch'] },
-            () => {
-                const p3Incident = wfa.action(
-                    action.core.createRecord,
-                    { $id: Now.ID['create_p3_incident'] },
-                    {
-                        table_name: 'incident',
-                        values: TemplateValue({
-                            priority: 4,
-                            short_description: wfa.dataPill(params.trigger.subject, 'string'),
-                            description: `From: ${wfa.dataPill(params.trigger.from_address, 'string')}\n\n${wfa.dataPill(params.trigger.inbound_email.body, 'reference')}`,
-                            contact_type: 'email',
-                            caller_id: wfa.dataPill(sender.Record.sys_id, 'reference'),
-                        }),
-                    }
-                )
+        wfa.flowLogic.else({ $id: Now.ID['create_p3_incident_branch'] }, () => {
+            const p3Incident = wfa.action(
+                action.core.createRecord,
+                { $id: Now.ID['create_p3_incident'] },
+                {
+                    table_name: 'incident',
+                    values: TemplateValue({
+                        priority: 4,
+                        short_description: wfa.dataPill(params.trigger.subject, 'string'),
+                        description: `From: ${wfa.dataPill(params.trigger.from_address, 'string')}\n\n${wfa.dataPill(params.trigger.inbound_email.body, 'reference')}`,
+                        contact_type: 'email',
+                        caller_id: wfa.dataPill(sender.Record.sys_id, 'reference'),
+                    }),
+                }
+            )
 
-                const attachments = wfa.action(
-                    action.core.getAttachmentsOnRecord,
-                    { $id: Now.ID['get_email_attachments'] },
-                    { source_record: wfa.dataPill(params.trigger.inbound_email.sys_id, 'reference') }
-                )
+            const attachments = wfa.action(
+                action.core.getAttachmentsOnRecord,
+                { $id: Now.ID['get_email_attachments'] },
+                { source_record: wfa.dataPill(params.trigger.inbound_email.sys_id, 'reference') }
+            )
 
-                wfa.flowLogic.forEach(
-                    wfa.dataPill(attachments.parameter, 'records'),
-                    { $id: Now.ID['copy_attachments_loop'] },
-                    () => {
-                        wfa.action(
-                            action.core.copyAttachment,
-                            { $id: Now.ID['copy_attachment'] },
-                            {
-                                target_record: wfa.dataPill(p3Incident.record, 'reference'),
-                                attachment_record: wfa.dataPill(attachments.parameter, 'records'),
-                                table: 'incident',
-                            }
-                        )
-                    }
-                )
+            wfa.flowLogic.forEach(
+                wfa.dataPill(attachments.parameter, 'records'),
+                { $id: Now.ID['copy_attachments_loop'] },
+                () => {
+                    wfa.action(
+                        action.core.copyAttachment,
+                        { $id: Now.ID['copy_attachment'] },
+                        {
+                            target_record: wfa.dataPill(p3Incident.record, 'reference'),
+                            attachment_record: wfa.dataPill(attachments.parameter, 'records'),
+                            table: 'incident',
+                        }
+                    )
+                }
+            )
 
-                wfa.action(
-                    action.core.sendEmail,
-                    { $id: Now.ID['confirm_p3_email'] },
-                    {
-                        table_name: 'incident',
-                        ah_to: wfa.dataPill(params.trigger.from_address, 'string'),
-                        ah_subject: `Incident Created: ${wfa.dataPill(params.trigger.subject, 'string')}`,
-                        ah_body: `Your request has been received and a P3 incident has been created. Our team will be in touch shortly.`,
-                        record: wfa.dataPill(p3Incident.record, 'reference'),
-                    }
-                )
-            }
-        )
+            wfa.action(
+                action.core.sendEmail,
+                { $id: Now.ID['confirm_p3_email'] },
+                {
+                    table_name: 'incident',
+                    ah_to: wfa.dataPill(params.trigger.from_address, 'string'),
+                    ah_subject: `Incident Created: ${wfa.dataPill(params.trigger.subject, 'string')}`,
+                    ah_body: `Your request has been received and a P3 incident has been created. Our team will be in touch shortly.`,
+                    record: wfa.dataPill(p3Incident.record, 'reference'),
+                }
+            )
+        })
     }
 )

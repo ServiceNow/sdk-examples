@@ -13,7 +13,7 @@ export const remoteUserQueryFlow = Flow(
             { $id: Now.ID['log_remote_query'] },
             {
                 log_level: 'info',
-                log_message: `Remote table query received for table: ${wfa.dataPill(params.trigger.table_name, 'table_name')} at ${wfa.dataPill(params.trigger.run_start_date_time, 'glide_date_time')}`,
+                log_message: `Remote query received - Query ID: ${wfa.dataPill(params.trigger.query_id, 'string')}, Parameters: ${wfa.dataPill(params.trigger.query_parameters, 'string')}, Table: ${wfa.dataPill(params.trigger.table_name, 'string')}}`,
             }
         )
 
