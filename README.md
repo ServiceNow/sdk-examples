@@ -40,5 +40,10 @@ This repository contains sample code illustrating the [ServiceNow SDK](https://d
 | [Script Action](scriptaction-sample/README.md)                | ScriptAction sample            |
 | [Script Include](script-include-sample/README.md)             | ScriptInclude sample           |
 | [UI Page](uipage-sample/README.md)                            | UiPage sample                  |
+| [Service Catalog](service-catalog-sample/README.md)           | Service Catalog sample         |
+| [Flow](flow-sample/README.md)                                 | Flow sample                    |
+| [SolidJS UI Page](solidjs-ui-page-sample/README.md)           | SolidJS UI Page sample         |
+| [Svelte UI Page](svelte-ui-page-sample/README.md)             | Svelte UI Page sample          |
+| [Vue UI Page](vue-ui-page-sample/README.md)                   | Vue UI Page sample             |
 
 <!-- SAMPLES_END -->
