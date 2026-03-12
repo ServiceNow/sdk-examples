@@ -9,23 +9,9 @@ declare global {
                         table: 'sys_module'
                         id: '2233f4433e684dc09c29678cdfdc6b94'
                     }
-                    'incident-manager-page': {
-                        table: 'sys_ui_page'
-                        id: 'ab8055895ecf4b9dbef9e9d6865b4bb1'
-                    }
                     package_json: {
                         table: 'sys_module'
                         id: '28fcd69dd5f44ff4a5365be9d86f590a'
-                    }
-                    'x_solidjs_example/main': {
-                        table: 'sys_ux_lib_asset'
-                        id: '4b46985b614b42a18dc61a21b97b4608'
-                        deleted: false
-                    }
-                    'x_solidjs_example/main.js.map': {
-                        table: 'sys_ux_lib_asset'
-                        id: 'decacd03dd8346559cc7a01054aca662'
-                        deleted: false
                     }
                 }
                 composite: [
@@ -77,6 +63,13 @@ declare global {
                             name: 'x_solidjs_example_incident'
                             element: 'resolved_at'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: '4b46985b614b42a18dc61a21b97b4608'
+                        key: {
+                            name: 'x_solidjs_example/main'
                         }
                     },
                     {
@@ -215,6 +208,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_page'
+                        id: 'ab8055895ecf4b9dbef9e9d6865b4bb1'
+                        key: {
+                            endpoint: 'x_solidjs_example_incident_manager.do'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'ba3223fedc1d4ee2aa36d6472d5efb55'
                         key: {
@@ -247,6 +247,13 @@ declare global {
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'short_description'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: 'decacd03dd8346559cc7a01054aca662'
+                        key: {
+                            name: 'x_solidjs_example/main.js.map'
                         }
                     },
                     {

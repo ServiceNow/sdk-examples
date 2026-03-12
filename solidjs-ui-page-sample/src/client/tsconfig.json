@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "rootDir": "./",
+        "module": "es2022",
+        "target": "es2022",
+        "moduleResolution": "bundler",
+        "jsx": "preserve",
+        "jsxImportSource": "solid-js",
+        "allowJs": true,
+        "declaration": false,
+        "sourceMap": false,
+        "skipLibCheck": true,
+        "allowImportingTsExtensions": true,
+        "noEmit": true
+    },
+    "include": [
+        "./**/*.ts",
+        "./**/*.tsx"
+    ]
+}

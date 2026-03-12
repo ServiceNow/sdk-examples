@@ -9,21 +9,9 @@ declare global {
                         table: 'sys_module'
                         id: '3902bcf9d99148c8be343b0dd0ba2b60'
                     }
-                    'incident-manager-page': {
-                        table: 'sys_ui_page'
-                        id: 'e4aa9208e0cb48f8a727c1c4c9b5069f'
-                    }
                     package_json: {
                         table: 'sys_module'
                         id: 'acad64273ea54c598622ec9849d2e27c'
-                    }
-                    'x_vueuisample/main': {
-                        table: 'sys_ux_lib_asset'
-                        id: 'a038dc0366b94a33a8bbaf2e01127f9b'
-                    }
-                    'x_vueuisample/main.js.map': {
-                        table: 'sys_ux_lib_asset'
-                        id: '27941cb6086c4ecf8bc1e649f5e7a2e2'
                     }
                 }
                 composite: [
@@ -59,6 +47,13 @@ declare global {
                             name: 'x_vueuisample_incident'
                             element: 'status'
                             value: 'in_progress'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: '27941cb6086c4ecf8bc1e649f5e7a2e2'
+                        key: {
+                            name: 'x_vueuisample/main.js.map'
                         }
                     },
                     {
@@ -181,6 +176,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ux_lib_asset'
+                        id: 'a038dc0366b94a33a8bbaf2e01127f9b'
+                        key: {
+                            name: 'x_vueuisample/main'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'aa7eb0b59ee14760aa6b941dc8bbce36'
                         key: {
@@ -263,6 +265,13 @@ declare global {
                         id: 'de9d44812fe14f1cbcb43ed9cd14b9d9'
                         key: {
                             name: 'x_vueuisample_incident'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_page'
+                        id: 'e4aa9208e0cb48f8a727c1c4c9b5069f'
+                        key: {
+                            endpoint: 'x_vueuisample_incident_manager.do'
                         }
                     },
                     {

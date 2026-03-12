@@ -97,6 +97,22 @@ declare global {
                         table: 'sys_hub_flow_logic_instance_v2'
                         id: 'bff6e8a39de44e3c9ff6e1b7da961933'
                     }
+                    create_catalog_task_flow: {
+                        table: 'sys_hub_flow'
+                        id: '6b21084d2add4ea39a6b5af72b4cafd2'
+                    }
+                    create_catalog_task_step1: {
+                        table: 'sys_hub_action_instance_v2'
+                        id: 'd02e4fcc43384147890cedc57ee8d13c'
+                    }
+                    create_catalog_task_step2: {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '4f5d100b9bad4d069d21de106a78a270'
+                    }
+                    create_catalog_task_trigger: {
+                        table: 'sys_hub_trigger_instance_v2'
+                        id: '42ec89e481d540129372fd33b0f2b058'
+                    }
                     create_content_task: {
                         table: 'sys_hub_action_instance_v2'
                         id: '0f7c09db0d534bd6a733bcaead7e6a27'
@@ -164,6 +180,10 @@ declare global {
                     incident_severity_alert_flow: {
                         table: 'sys_hub_flow'
                         id: '24c825516f744110aa3e586f5b9f86de'
+                    }
+                    init_approval_vars: {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: '799eb992d2cf4701aaef0b4102db50c1'
                     }
                     knowledge_article_qa_flow: {
                         table: 'sys_hub_flow'
@@ -369,6 +389,10 @@ declare global {
                         table: 'sys_hub_trigger_instance_v2'
                         id: 'cfd7e9337274486e92cdfe7f125c7fa7'
                     }
+                    software_installation_catalog_item: {
+                        table: 'sc_cat_item'
+                        id: '2b1e50c0ea5c436aacd7df917125ae08'
+                    }
                     tag_high_risk: {
                         table: 'sys_hub_action_instance_v2'
                         id: 'fc7304ff51f54042a6768f17ba085706'
@@ -380,6 +404,54 @@ declare global {
                     task_for_sender: {
                         table: 'sys_hub_action_instance_v2'
                         id: '38a664d6598048e189f624fc45b10122'
+                    }
+                    test_flow_for_service_catalog: {
+                        table: 'sys_hub_flow'
+                        id: '18413d0ee5354c8d998bd5331fffe88b'
+                    }
+                    test_flow_for_service_catalog_ask_for_approval: {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '979645e5057f40738d45b595e1c16adc'
+                    }
+                    test_flow_for_service_catalog_create_task: {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '2828a483bf7d4ad6924cebdb9964fe3f'
+                    }
+                    test_flow_for_service_catalog_else_not_approved: {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: 'f99354b26a3440638f2ef9c1c6306296'
+                    }
+                    test_flow_for_service_catalog_if_approved: {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: 'ff10e2abcbae491fba61df3d28e604c2'
+                    }
+                    test_flow_for_service_catalog_if_condition: {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: '3b5d82381d874fae9fe2802cb7226591'
+                    }
+                    test_flow_for_service_catalog_if_task_closed: {
+                        table: 'sys_hub_flow_logic_instance_v2'
+                        id: '961414604bc143159954cbdd7f908579'
+                    }
+                    test_flow_for_service_catalog_step1: {
+                        table: 'sys_hub_action_instance_v2'
+                        id: 'ecd95f418bbb4d598738b96aaf6889af'
+                    }
+                    test_flow_for_service_catalog_step2: {
+                        table: 'sys_hub_action_instance_v2'
+                        id: 'b521d15eb11c4fc5bddb86cbad723ed7'
+                    }
+                    test_flow_for_service_catalog_trigger: {
+                        table: 'sys_hub_trigger_instance_v2'
+                        id: '74efb7a1e9b14207bfa0e543b9d16c5c'
+                    }
+                    test_flow_for_service_catalog_update_closed_incomplete: {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '652618057d4743838c88581338ec0153'
+                    }
+                    test_flow_for_service_catalog_update_record: {
+                        table: 'sys_hub_action_instance_v2'
+                        id: '465b41cbd2c243fd8b45210799297494'
                     }
                     unhandled_table_branch: {
                         table: 'sys_hub_flow_logic_instance_v2'
@@ -400,6 +472,10 @@ declare global {
                     urgent_escalation_90: {
                         table: 'sys_hub_action_instance_v2'
                         id: 'd269b0aada5541f38cbf42adf8b38146'
+                    }
+                    user_info_varset: {
+                        table: 'item_option_new_set'
+                        id: 'f1a8725a3d8e4c75acc6ca8c89faef41'
                     }
                     wait_75_percent: {
                         table: 'sys_hub_action_instance_v2'
@@ -429,10 +505,27 @@ declare global {
                 composite: [
                     {
                         table: 'sys_hub_flow_variable'
+                        id: '1167b6f266c248d49091fe2269bd822c'
+                        key: {
+                            model: '18413d0ee5354c8d998bd5331fffe88b'
+                            element: 'approverUser1'
+                        }
+                    },
+                    {
+                        table: 'sys_hub_flow_variable'
                         id: '1cacbdc7304d4096916c5a7d56427834'
                         key: {
                             model: 'd83d3d195a9746f98efeb4d3b9838034'
                             element: 'desk_found'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: '1d628573558b49be93389bd6e55979bd'
+                        key: {
+                            cat_item: 'NULL'
+                            variable_set: 'f1a8725a3d8e4c75acc6ca8c89faef41'
+                            name: 'userEmail'
                         }
                     },
                     {
@@ -453,11 +546,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '2c0bb521e90648a5a5b4d7816b1c7048'
+                        key: {
+                            name: 'var__m_sys_hub_flow_variable_18413d0ee5354c8d998bd5331fffe88b'
+                            element: 'approverUser1'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_hub_flow_variable'
                         id: '2cc46dc754f241bbb0d2f5217c472d3b'
                         key: {
                             model: 'd83d3d195a9746f98efeb4d3b9838034'
                             element: 'laptop_found'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: '37b34a1db6494d3bbf67858559d28612'
+                        key: {
+                            cat_item: '2b1e50c0ea5c436aacd7df917125ae08'
+                            variable_set: 'NULL'
+                            name: 'ipAddress'
                         }
                     },
                     {
@@ -478,11 +589,38 @@ declare global {
                         }
                     },
                     {
+                        table: 'item_option_new'
+                        id: '410bbb3334534c67b213f2537a26b22a'
+                        key: {
+                            cat_item: '2b1e50c0ea5c436aacd7df917125ae08'
+                            variable_set: 'NULL'
+                            name: 'label'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: '4188f9c6b4664b3a9ec934438e8c95dd'
+                        key: {
+                            cat_item: '2b1e50c0ea5c436aacd7df917125ae08'
+                            variable_set: 'NULL'
+                            name: 'multilineText'
+                        }
+                    },
+                    {
                         table: 'sys_hub_flow_output'
                         id: '43379663ae744b63a354c5053485ae3c'
                         key: {
                             model: 'd83d3d195a9746f98efeb4d3b9838034'
                             element: 'laptop_number'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: '442402686d6a4d0b859efcbdf5c508c7'
+                        key: {
+                            cat_item: '2b1e50c0ea5c436aacd7df917125ae08'
+                            variable_set: 'NULL'
+                            name: 'richTextLabel'
                         }
                     },
                     {
@@ -528,6 +666,41 @@ declare global {
                         }
                     },
                     {
+                        table: 'item_option_new'
+                        id: '7db19a4ac9434eb09710263225db4098'
+                        key: {
+                            cat_item: 'NULL'
+                            variable_set: 'f1a8725a3d8e4c75acc6ca8c89faef41'
+                            name: 'userPhone'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: '7f3237000555401b9c2c75b09a20cfc7'
+                        key: {
+                            cat_item: '2b1e50c0ea5c436aacd7df917125ae08'
+                            variable_set: 'NULL'
+                            name: 'singleline'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: '8675148e04634cdfb5afe4b270fc3806'
+                        key: {
+                            cat_item: '2b1e50c0ea5c436aacd7df917125ae08'
+                            variable_set: 'NULL'
+                            name: 'email'
+                        }
+                    },
+                    {
+                        table: 'io_set_item'
+                        id: '9e169ad5ccf741db8e4e30c33c8b85c9'
+                        key: {
+                            sc_cat_item: '2b1e50c0ea5c436aacd7df917125ae08'
+                            variable_set: 'f1a8725a3d8e4c75acc6ca8c89faef41'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'a7217d59b40d4fbf949789e5e18776ed'
                         key: {
@@ -546,6 +719,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'item_option_new'
+                        id: 'b8ab3afca1984a6caf81a2bd17147d95'
+                        key: {
+                            cat_item: '2b1e50c0ea5c436aacd7df917125ae08'
+                            variable_set: 'NULL'
+                            name: 'html'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'e30acb9ea5204d218a78307a8407b31a'
                         key: {
@@ -555,12 +737,39 @@ declare global {
                         }
                     },
                     {
+                        table: 'item_option_new'
+                        id: 'e383418eaaef420bb9a40c8197ab0aa6'
+                        key: {
+                            cat_item: 'NULL'
+                            variable_set: 'f1a8725a3d8e4c75acc6ca8c89faef41'
+                            name: 'userName'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: 'e603531f0e0048cd91ba381114882e2a'
+                        key: {
+                            cat_item: '2b1e50c0ea5c436aacd7df917125ae08'
+                            variable_set: 'NULL'
+                            name: 'url'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'f78d6cf336cc4129af44cffb53202464'
                         key: {
                             name: 'var__m_sys_hub_flow_output_d83d3d195a9746f98efeb4d3b9838034'
                             element: 'desk_number'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: 'fbe57b69ea384835bb7112e68aed5947'
+                        key: {
+                            cat_item: '2b1e50c0ea5c436aacd7df917125ae08'
+                            variable_set: 'NULL'
+                            name: 'yesNo'
                         }
                     },
                 ]

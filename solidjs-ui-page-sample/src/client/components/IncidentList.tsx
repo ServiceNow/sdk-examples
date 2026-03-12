@@ -1,4 +1,4 @@
-import { For } from 'solid-js'
+import { For, Show } from 'solid-js'
 import './IncidentList.css'
 
 export default function IncidentList(props) {

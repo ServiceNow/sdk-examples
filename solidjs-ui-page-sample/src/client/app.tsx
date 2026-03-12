@@ -1,4 +1,4 @@
-import { createSignal, createEffect, onMount, Show } from 'solid-js'
+import { createSignal, onMount, Show } from 'solid-js'
 import { IncidentService } from './services/IncidentService'
 import IncidentList from './components/IncidentList'
 import IncidentForm from './components/IncidentForm'
@@ -51,10 +51,7 @@ export default function App() {
         try {
             const incident = selectedIncident()
             if (incident) {
-                const sysId =
-                    typeof incident.sys_id === 'object'
-                        ? incident.sys_id.value
-                        : incident.sys_id
+                const sysId = typeof incident.sys_id === 'object' ? incident.sys_id.value : incident.sys_id
                 await incidentService.update(sysId, formData)
             } else {
                 await incidentService.create(formData)
@@ -85,14 +82,17 @@ export default function App() {
                 </div>
             </Show>
 
-            <Show when={loading()} fallback={
-                <IncidentList
-                    incidents={incidents()}
-                    onEdit={handleEditClick}
-                    onRefresh={refreshIncidents}
-                    service={incidentService}
-                />
-            }>
+            <Show
+                when={loading()}
+                fallback={
+                    <IncidentList
+                        incidents={incidents()}
+                        onEdit={handleEditClick}
+                        onRefresh={refreshIncidents}
+                        service={incidentService}
+                    />
+                }
+            >
                 <div class="loading">Loading...</div>
             </Show>
 
