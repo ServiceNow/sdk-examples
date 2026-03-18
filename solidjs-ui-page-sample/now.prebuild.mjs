@@ -42,15 +42,15 @@ export default async ({
     // Use the default set of ServiceNow plugins for Rollup
     // configured for the scope name and root directory
     plugins: [
-      ...servicenowFrontEndPlugins({
-        scope: config.scope,
-        rootDir: clientDir,
-        registerExplicitId,
-      }).filter(({ name }) => name !== "swc"),
       babel({
         extensions: [".js", ".jsx", ".ts", ".tsx"],
         babelHelpers: "bundled",
         presets: ["babel-preset-solid", "@babel/preset-typescript"],
+      }),
+      servicenowFrontEndPlugins({
+        scope: config.scope,
+        rootDir: clientDir,
+        registerExplicitId,
       }),
     ],
   });
