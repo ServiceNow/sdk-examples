@@ -15,7 +15,7 @@
         "typescript": "catalog:",
         "eslint": "8.50.0",
         "@servicenow/eslint-plugin-sdk-app-plugin": "catalog:",
-        "@servicenow/isomorphic-rollup": "^1.2.1",
+        "@servicenow/isomorphic-rollup": "catalog:",
         "svelte": "5.38.7",
         "rollup-plugin-svelte": "7.2.3",
         "@rollup/plugin-node-resolve": "16.0.1"

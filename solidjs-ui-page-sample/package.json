@@ -4,6 +4,7 @@
     "description": "",
     "license": "UNLICENSED",
     "scripts": {
+        "dev": "now-sdk run dev",
         "build": "now-sdk build",
         "deploy": "now-sdk install",
         "yolo": "pnpm run build && pnpm run deploy",
@@ -16,7 +17,7 @@
         "@rollup/plugin-babel": "^6.0.4",
         "@servicenow/eslint-plugin-sdk-app-plugin": "catalog:",
         "@servicenow/glide": "catalog:",
-        "@servicenow/isomorphic-rollup": "^1.2.1",
+        "@servicenow/isomorphic-rollup": "catalog:",
         "@servicenow/sdk": "catalog:",
         "babel-preset-solid": "^1.9.9",
         "eslint": "8.50.0",

@@ -5,4 +5,5 @@ catalog:
     '@servicenow/sdk': '4.4.0'
     '@servicenow/glide': '27.0.5'
     '@servicenow/eslint-plugin-sdk-app-plugin': '4.4.0'
+    '@servicenow/isomorphic-rollup': '1.2.14'
     typescript: '5.8.2'
