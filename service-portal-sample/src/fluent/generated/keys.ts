@@ -25,10 +25,6 @@ declare global {
                         table: 'sp_container'
                         id: '8186164affd4b210fd87ffffffffff11'
                     }
-                    '8e66560affd4b210fd87ffffffffffe6': {
-                        table: 'sp_page'
-                        id: '8e66560affd4b210fd87ffffffffffe6'
-                    }
                     bom_json: {
                         table: 'sys_module'
                         id: '08258aed792c4aff85f6e57198fbd406'
@@ -61,6 +57,13 @@ declare global {
                         key: {
                             sp_widget: '58ddf4df40894f298a720955cc549b03'
                             sp_angular_provider: '1d2b40e07323201081d3738234f6a714'
+                        }
+                    },
+                    {
+                        table: 'sp_page'
+                        id: '8e66560affd4b210fd87ffffffffffe6'
+                        key: {
+                            id: 'sample_page'
                         }
                     },
                 ]

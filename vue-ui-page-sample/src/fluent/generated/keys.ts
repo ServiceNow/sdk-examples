@@ -33,7 +33,19 @@ declare global {
                     },
                     {
                         table: 'sys_choice'
+                        id: '135358abcc3e424580b6ada1af14ed64'
+                        key: {
+                            name: 'x_vueuisample_incident'
+                            element: 'status'
+                            value: 'new'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
                         id: '13b046fbf58142cbb9ce7fa97938734f'
+                        deleted: true
                         key: {
                             name: 'x_vueuisample_incident'
                             element: 'priority'
@@ -43,10 +55,22 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '1bbb32f23de24aef89bc9b31660d4714'
+                        deleted: true
                         key: {
                             name: 'x_vueuisample_incident'
                             element: 'status'
                             value: 'in_progress'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '21eef480f6c140108f336f3d067cd294'
+                        key: {
+                            name: 'x_vueuisample_incident'
+                            element: 'priority'
+                            value: '3'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -90,6 +114,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '3663f01fadae4f36a084e256937fdfd6'
+                        key: {
+                            name: 'x_vueuisample_incident'
+                            element: 'status'
+                            value: 'on_hold'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '3ac0eda7f7444cc1bce7275e20ff8bc3'
                         key: {
@@ -109,6 +144,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '3cccd67cd9b84a0782e1c5c05456da49'
+                        deleted: true
                         key: {
                             name: 'x_vueuisample_incident'
                             element: 'priority'
@@ -134,6 +170,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '54bc52617757458f9a942db57ae6cb96'
+                        deleted: true
                         key: {
                             name: 'x_vueuisample_incident'
                             element: 'status'
@@ -142,7 +179,30 @@ declare global {
                     },
                     {
                         table: 'sys_choice'
+                        id: '6f18f190309b4665bc0c8daa63a8d059'
+                        key: {
+                            name: 'x_vueuisample_incident'
+                            element: 'status'
+                            value: 'resolved'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '6fe81a6a541643c1927e0695243da769'
+                        key: {
+                            name: 'x_vueuisample_incident'
+                            element: 'priority'
+                            value: '1'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
                         id: '7a8f80c33e7f44abbe01e851443d2fb4'
+                        deleted: true
                         key: {
                             name: 'x_vueuisample_incident'
                             element: 'status'
@@ -183,6 +243,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'a3a394125bf54ac3b61b922fcd5099f3'
+                        key: {
+                            name: 'x_vueuisample_incident'
+                            element: 'priority'
+                            value: '4'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'aa7eb0b59ee14760aa6b941dc8bbce36'
                         key: {
@@ -192,7 +263,19 @@ declare global {
                     },
                     {
                         table: 'sys_choice'
+                        id: 'acea71dbec7f43f9b240ea396e2cc825'
+                        key: {
+                            name: 'x_vueuisample_incident'
+                            element: 'status'
+                            value: 'in_progress'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
                         id: 'aefe2a6f9d0149178a3b2d7b7d6a365b'
+                        deleted: true
                         key: {
                             name: 'x_vueuisample_incident'
                             element: 'priority'
@@ -202,6 +285,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'b2e1ed1cd3ba4d679fee9bd1ad6b9349'
+                        deleted: true
                         key: {
                             name: 'x_vueuisample_incident'
                             element: 'priority'
@@ -237,6 +321,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'bd3824fde3ce4e93993e936ea745c88b'
+                        deleted: true
                         key: {
                             name: 'x_vueuisample_incident'
                             element: 'status'
@@ -246,6 +331,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'bdd49227885f42ca84d662ea5f98004f'
+                        deleted: true
                         key: {
                             name: 'x_vueuisample_incident'
                             element: 'status'
@@ -261,10 +347,32 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'd4d5339c0c004c1e9c8b9b6bb16f62c6'
+                        key: {
+                            name: 'x_vueuisample_incident'
+                            element: 'priority'
+                            value: '2'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: 'de9d44812fe14f1cbcb43ed9cd14b9d9'
                         key: {
                             name: 'x_vueuisample_incident'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'e22cd98f31504314ac7a5eb54e3a7e41'
+                        key: {
+                            name: 'x_vueuisample_incident'
+                            element: 'status'
+                            value: 'closed'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {

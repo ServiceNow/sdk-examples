@@ -11,8 +11,6 @@
     },
     "devDependencies": {
         "@servicenow/sdk": "catalog:",
-        "@servicenow/glide": "catalog:",
-        "eslint": "8.50.0",
-        "@servicenow/eslint-plugin-sdk-app-plugin": "catalog:"
+        "@servicenow/glide": "catalog:"
     }
 }

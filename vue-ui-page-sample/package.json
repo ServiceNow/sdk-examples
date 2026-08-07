@@ -14,8 +14,6 @@
         "@servicenow/glide": "catalog:",
         "@servicenow/sdk": "catalog:",
         "typescript": "catalog:",
-        "eslint": "8.50.0",
-        "@servicenow/eslint-plugin-sdk-app-plugin": "catalog:",
         "@servicenow/isomorphic-rollup": "catalog:",
         "rollup-plugin-vue": "6.0.0",
         "vue": "3.5.21"

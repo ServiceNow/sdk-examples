@@ -19,7 +19,6 @@
         "eslint": "^8.57.0",
         "prettier": "^3.8.1",
         "eslint-config-prettier": "^9.1.0",
-        "typescript-eslint": "^7.4.0",
-        "@servicenow/eslint-plugin-sdk-app-plugin": "catalog:"
+        "typescript-eslint": "^7.4.0"
     }
 }

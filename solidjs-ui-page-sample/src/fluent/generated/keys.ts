@@ -32,6 +32,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '2cc73718f1394433bc5178730504d123'
+                        key: {
+                            name: 'x_solidjs_example_incident'
+                            element: 'priority'
+                            value: '4'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '2fe4eeb42f91411abd483a0b6c281e10'
+                        key: {
+                            name: 'x_solidjs_example_incident'
+                            element: 'priority'
+                            value: '2'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_choice_set'
                         id: '3018b8a974ff4203bff67ad3afa9daf6'
                         key: {
@@ -50,6 +72,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '37777476c5b54a11b18fbcf9feaa915e'
+                        deleted: true
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'status'
@@ -75,6 +98,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '510b0cb67f7542c5944d4595dfd349cb'
+                        deleted: true
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'status'
@@ -84,6 +108,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '528b9385c16044a09a33cd99c67f5045'
+                        deleted: true
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'priority'
@@ -93,6 +118,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '5a89d6924204483f8e1df4c327281d80'
+                        deleted: true
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'priority'
@@ -105,6 +131,17 @@ declare global {
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'opened_at'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '5e7a5f78242848a5a7621eab577ff27a'
+                        key: {
+                            name: 'x_solidjs_example_incident'
+                            element: 'status'
+                            value: 'new'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -135,6 +172,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '6d18356686724d40ba074f3cb9bbd314'
+                        deleted: true
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'status'
@@ -175,6 +213,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '917602d91b414ebea79ebff39a08f3a4'
+                        key: {
+                            name: 'x_solidjs_example_incident'
+                            element: 'status'
+                            value: 'in_progress'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: '9a9c6ec137604cc3a01e3cf9775638d8'
                         key: {
@@ -208,6 +257,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'a2f18126518b426aaaf9fecd370b631d'
+                        key: {
+                            name: 'x_solidjs_example_incident'
+                            element: 'priority'
+                            value: '3'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_ui_page'
                         id: 'ab8055895ecf4b9dbef9e9d6865b4bb1'
                         key: {
@@ -226,6 +286,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'c13e8175c5e842b497213fec4451288d'
+                        deleted: true
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'status'
@@ -242,11 +303,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'c35a3a539c04496a821fb4247cc7646b'
+                        key: {
+                            name: 'x_solidjs_example_incident'
+                            element: 'status'
+                            value: 'resolved'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'cbb7c7a72d7e4c24a112968ad49965d8'
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'short_description'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'd055a8846fe34d06b3aeb730ca14689e'
+                        key: {
+                            name: 'x_solidjs_example_incident'
+                            element: 'priority'
+                            value: '1'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -259,6 +342,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'e4d59e7fd59e41cc902c2d14cb81c01d'
+                        deleted: true
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'priority'
@@ -276,6 +360,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'f33dff1e0d9c483abe1d3078fff20dd1'
+                        deleted: true
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'status'
@@ -284,7 +369,30 @@ declare global {
                     },
                     {
                         table: 'sys_choice'
+                        id: 'f38920c458f44de39afcab39f7910126'
+                        key: {
+                            name: 'x_solidjs_example_incident'
+                            element: 'status'
+                            value: 'on_hold'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'f4135a3804ca4f95a6beeb95eea20ce6'
+                        key: {
+                            name: 'x_solidjs_example_incident'
+                            element: 'status'
+                            value: 'closed'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
                         id: 'fd68f35da42f4d1cb2c4d80847922627'
+                        deleted: true
                         key: {
                             name: 'x_solidjs_example_incident'
                             element: 'priority'

@@ -21,6 +21,17 @@ declare global {
                 }
                 composite: [
                     {
+                        table: 'sys_choice'
+                        id: '0057c8cf4cce4e229266b4dcaa69728d'
+                        key: {
+                            name: 'x_tablesample_index'
+                            element: 'color'
+                            value: 'white'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '0509ecc0142e4e75b1221bed785d2b4d'
                         key: {
@@ -113,6 +124,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '3bb47933ca804fb6b6ee512c69255275'
+                        deleted: true
                         key: {
                             name: 'x_tablesample_index'
                             element: 'color'
@@ -126,6 +138,17 @@ declare global {
                             name: 'x_tablesample_index'
                             element: 'sys_created_by'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '40def34ea8ed41c09f3f41a372e0bb36'
+                        key: {
+                            name: 'x_tablesample_index'
+                            element: 'color'
+                            value: 'black'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -210,6 +233,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '781f9b877e7649a49c6a19eec0fc0f22'
+                        key: {
+                            name: 'x_tablesample_index'
+                            element: 'color'
+                            value: 'brown'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '7a65391414af4066b12c6ee28343a349'
                         key: {
@@ -262,6 +296,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '946af1f89a6a43a29ebef7884791bfff'
+                        deleted: true
                         key: {
                             name: 'x_tablesample_index'
                             element: 'color'
@@ -289,6 +324,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'b2efa4549ee24c34bcf3a44a3f336ffb'
+                        deleted: true
                         key: {
                             name: 'x_tablesample_index'
                             element: 'color'

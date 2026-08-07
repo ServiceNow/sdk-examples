@@ -14,8 +14,6 @@
         "@servicenow/glide": "catalog:",
         "@servicenow/sdk": "catalog:",
         "typescript": "catalog:",
-        "eslint": "8.50.0",
-        "@servicenow/eslint-plugin-sdk-app-plugin": "catalog:",
         "@servicenow/isomorphic-rollup": "catalog:",
         "@types/react": "19.x",
         "@types/react-dom": "19.x",

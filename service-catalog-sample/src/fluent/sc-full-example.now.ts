@@ -58,10 +58,7 @@ const catalogTechnicalCatalog = Record({
         description: 'Enterprise IT services and infrastructure items',
         active: true,
         desktop_home_page: 'welcome',
-        enable_cart: true,
         enable_wish_list: true,
-        manager_role: 'admin',
-        sys_domain: 'global',
     },
 })
 
@@ -75,10 +72,9 @@ const categorySoftware = Record({
     data: {
         title: 'Software',
         description: 'Software related items',
-        catalog: catalogTechnicalCatalog,
+        sc_catalog: catalogTechnicalCatalog,
         active: true,
         order: 100,
-        sys_domain: 'global',
     },
 })
 
@@ -94,7 +90,6 @@ const topicSoftware = Record({
         description: 'Software related knowledge articles',
         taxonomy: '1f5d5a40c3203010069aec4b7d40dd93',
         active: true,
-        sys_domain: 'global',
     },
 })
 

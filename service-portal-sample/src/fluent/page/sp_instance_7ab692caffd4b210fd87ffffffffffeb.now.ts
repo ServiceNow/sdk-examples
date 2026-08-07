@@ -5,9 +5,8 @@ Record({
     table: 'sp_instance',
     data: {
         active: true,
-        advanced_placeholder_dimensions: 'false',
-        async_load: 'false',
-        async_load_device_type: 'desktop,tablet,mobile',
+        advanced_placeholder_dimensions: false,
+        async_load: false,
         async_load_trigger: 'viewport',
         color: 'default',
         order: 1,
@@ -30,7 +29,7 @@ Record({
 	<div class="skeleton-box skeleton-line small"></div>
 	<div class="skeleton-box skeleton-line medium"></div>
 </div>`,
-        preserve_placeholder_size: 'false',
+        preserve_placeholder_size: false,
         size: 'md',
         sp_column: '60b69e8affd4b210fd87ffffffffff27',
         sp_widget: '58ddf4df40894f298a720955cc549b03',

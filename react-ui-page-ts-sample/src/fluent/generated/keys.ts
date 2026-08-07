@@ -88,6 +88,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '3cdac18026944c5f8101339907de2bb5'
+                        deleted: true
                         key: {
                             name: 'x_reactuisample_incident'
                             element: 'status'
@@ -96,7 +97,19 @@ declare global {
                     },
                     {
                         table: 'sys_choice'
+                        id: '516820ed261343ed88c3ee5eb09f91d7'
+                        key: {
+                            name: 'x_reactuisample_incident'
+                            element: 'priority'
+                            value: '3'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
                         id: '522b6562f793474d9ff5c6e3fddaa771'
+                        deleted: true
                         key: {
                             name: 'x_reactuisample_incident'
                             element: 'priority'
@@ -106,6 +119,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '563a968c611b4cf28be91932af8f2d4a'
+                        deleted: true
                         key: {
                             name: 'x_reactuisample_incident'
                             element: 'priority'
@@ -130,7 +144,19 @@ declare global {
                     },
                     {
                         table: 'sys_choice'
+                        id: '57ae2cc8c5e14b029445d423b699de1e'
+                        key: {
+                            name: 'x_reactuisample_incident'
+                            element: 'priority'
+                            value: '2'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
                         id: '57e23001543f4882aae755a511ec76b8'
+                        deleted: true
                         key: {
                             name: 'x_reactuisample_incident'
                             element: 'status'
@@ -170,11 +196,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '73490247304d4ad5b1b0daff46f52e9d'
+                        key: {
+                            name: 'x_reactuisample_incident'
+                            element: 'status'
+                            value: 'new'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_number'
                         id: '75a62fb754c1465abeb3252e1953f7f5'
                         key: {
                             category: 'x_reactuisample_incident'
                             prefix: 'INC'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '78a3aad3241c4346b2993e71891949c7'
+                        key: {
+                            name: 'x_reactuisample_incident'
+                            element: 'status'
+                            value: 'resolved'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -198,6 +246,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '834af4312b174557aed8b362cbc29ca8'
+                        deleted: true
                         key: {
                             name: 'x_reactuisample_incident'
                             element: 'priority'
@@ -216,6 +265,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: '91608152caaf4df2a70ade530271ee83'
+                        deleted: true
                         key: {
                             name: 'x_reactuisample_incident'
                             element: 'priority'
@@ -241,7 +291,30 @@ declare global {
                     },
                     {
                         table: 'sys_choice'
+                        id: 'a2b9d496544542939a5f2fa1aa3f9e56'
+                        key: {
+                            name: 'x_reactuisample_incident'
+                            element: 'status'
+                            value: 'on_hold'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'a43df48fd3d0408aa85106c8d51c4b77'
+                        key: {
+                            name: 'x_reactuisample_incident'
+                            element: 'status'
+                            value: 'in_progress'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
                         id: 'b304d99c268f4705a6f5ae9203fe514b'
+                        deleted: true
                         key: {
                             name: 'x_reactuisample_incident'
                             element: 'status'
@@ -259,6 +332,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'bf0c18cc10644824949662132e902377'
+                        deleted: true
                         key: {
                             name: 'x_reactuisample_incident'
                             element: 'status'
@@ -284,7 +358,41 @@ declare global {
                     },
                     {
                         table: 'sys_choice'
+                        id: 'd8a72fac18cd414ca404f1e7f95bf3e6'
+                        key: {
+                            name: 'x_reactuisample_incident'
+                            element: 'priority'
+                            value: '4'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'e35a7b2256654f5e87d0cb0d2e27e953'
+                        key: {
+                            name: 'x_reactuisample_incident'
+                            element: 'priority'
+                            value: '1'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'e4c7bce453cc4bd3bb1d28eef7433631'
+                        key: {
+                            name: 'x_reactuisample_incident'
+                            element: 'status'
+                            value: 'closed'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
                         id: 'ff2902cffa864c2d875d40ee12b5d954'
+                        deleted: true
                         key: {
                             name: 'x_reactuisample_incident'
                             element: 'status'
