@@ -6,8 +6,11 @@
     "author": "ServiceNow",
     "license": "ISC",
     "scripts": {
-        "build": "tsc -b && now-sdk build",
+        "build": "now-sdk build",
         "dependencies": "now-sdk dependencies"
+    },
+    "dependencies": {
+        "date-fns": "4.4.0"
     },
     "devDependencies": {
         "@servicenow/glide": "catalog:",

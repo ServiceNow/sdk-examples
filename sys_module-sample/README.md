@@ -1,25 +1,39 @@
 # Simple Sys Module Sample
 
-These examples show two techniques to call a module cross-scope.
+These examples show techniques for working with `sys_module` records: wrapping compiled modules in script includes, referencing script includes and global-scope APIs from server modules, and pulling in third-party npm packages.
 
-## Expose a class
-Sample Class demonstrates creating a server side script to expose and wrap a module in a class so that it can be used similarly to traditional script includes. 
+## Fluent: Script Includes ([src/fluent](src/fluent))
+
+### Expose a compiled module as a script include
+
+[`script-include-module-one.now.ts`](src/fluent/script-include-module-one.now.ts) wraps a compiled server module in a `ScriptInclude()` so it can be called like a traditional script include, including cross-scope. Modules are currently blocked from being called by other scopes, and this is a workaround to exposing them if needed.
 
 ```javascript
-var sample = new SampleClass();
-sample.getTestOne();
+var sample = new SampleClass()
+sample.getTestOne()
 ```
 
-## Expose "require" using x_require
-Create a script include to expose "require" so that modules can be referenced cross-scope. You will need to modify the `api_name` property to use your application's scope.
+### Register a plain-JS script include
 
-Once installed use the script by calling {scope_name}.x_require with the path that you copied from the module in the sys_module table.
-```javascript
-// ES6+:
-const { methodA, propertyB } = x_snc_scope_name.x_require("full/path/of/es_module/in/sys_module/table");
+[`my-script-include.ts`](src/fluent/my-script-include.ts) registers a `ScriptInclude()` whose implementation is a traditional `Class.create()`-style script ([`my-script-include.js`](src/fluent/my-script-include.js)), using `Now.include` to bring in the script body.
 
-// ES5:
-var myModule = x_snc_scope_name.x_require("full/path/of/es_module/in/sys_module/table");
-myModule.methodA();
-myModule.propertyB;
+## Server modules ([src/server](src/server))
+
+### Call a script include from a server module
+
+[`use-script-include-sample.ts`](src/server/use-script-include-sample.ts) imports a script include defined in your own application scope via `@servicenow/glide/{scope}` and calls it from TypeScript.
+
+```typescript
+import { MyScriptInclude } from '@servicenow/glide/x_sysmodulesample'
+
+const scriptInclude = new MyScriptInclude()
+scriptInclude.helloWorld()
 ```
+
+### Use global-scope APIs from a server module
+
+[`sample-script-include-import.ts`](src/server/sample-script-include-import.ts) imports from `@servicenow/glide/global` to reach global-scope classes (e.g. `DateTimeUtils`) script includes from a sys module.
+
+### Use a third-party npm package
+
+[`tpm-sample.ts`](src/server/tpm-sample.ts) shows using a third-party library (`date-fns`) inside a server-side module.
