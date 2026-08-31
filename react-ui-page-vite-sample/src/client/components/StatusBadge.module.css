@@ -1,0 +1,32 @@
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.new {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.inProgress {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+.onHold {
+    background-color: #fff8e1;
+    color: #ffa000;
+}
+
+.resolved {
+    background-color: #e0f7fa;
+    color: #0097a7;
+}
+
+.closed {
+    background-color: #eceff1;
+    color: #546e7a;
+}

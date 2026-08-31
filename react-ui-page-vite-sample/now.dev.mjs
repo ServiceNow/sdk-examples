@@ -17,7 +17,7 @@ export default async ({ rootDir, config, fs, path, logger, credential }) => {
 
     const server = await createServer({
         root: clientDir,
-        configFile: false,
+        configFile: path.join(rootDir, 'vite.config.mjs'),
         plugins: [react(), ...plugins],
         server: {
             port: 3000,
@@ -28,5 +28,5 @@ export default async ({ rootDir, config, fs, path, logger, credential }) => {
     await server.listen()
     logger.info(`Vite dev server running at http://localhost:${server.config.server.port}`)
 
-    return new Promise(() => {})
+    return new Promise(() => { })
 }

@@ -22,8 +22,7 @@ export default async ({ rootDir, config, fs, path, logger, registerExplicitId })
 
     await build({
         root: clientDir,
-        configFile: false,
-        esbuild: false,
+        configFile: path.join(rootDir, 'vite.config.mjs'),
         plugins,
         build: {
             outDir: staticContentDir,

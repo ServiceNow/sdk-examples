@@ -8,10 +8,32 @@ declare global {
                     'assets/IncidentForm-BuNt7Rf-.css': {
                         table: 'sys_ux_theme_asset'
                         id: 'c4bf456fe83040a6977013ae2b9ead40'
+                        deleted: true
+                    }
+                    'assets/IncidentForm-Dw_InjHF.css': {
+                        table: 'sys_ux_theme_asset'
+                        id: '84a991e437f0414e9925dbaec894c8a3'
+                        deleted: false
+                    }
+                    'assets/IncidentForm-hX-4O_o7.css': {
+                        table: 'sys_ux_theme_asset'
+                        id: '4fb3695a110f4432867fdb96b85b455a'
+                        deleted: true
                     }
                     'assets/main-CSAvx5Vu.css': {
                         table: 'sys_ux_theme_asset'
                         id: '9530215f11c74baf8082397ab28e3448'
+                        deleted: true
+                    }
+                    'assets/main-DeCZmlx3.css': {
+                        table: 'sys_ux_theme_asset'
+                        id: '370aa48133fb477a9adcd5db3f4d7cfa'
+                        deleted: true
+                    }
+                    'assets/main-e9QbdRfV.css': {
+                        table: 'sys_ux_theme_asset'
+                        id: 'cdd0886abbda4b94a405a53aa81a5224'
+                        deleted: false
                     }
                     bom_json: {
                         table: 'sys_module'
