@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react'
-import type { Incident, IncidentInput } from '../types'
+import React, { useState, useRef } from 'react'
+import type { Incident, IncidentField, IncidentInput } from '../types'
 import { Modal, type FooterAction } from '@servicenow/react-components/Modal'
 import { Input } from '@servicenow/react-components/Input'
 import { Textarea } from '@servicenow/react-components/Textarea'
@@ -27,38 +27,25 @@ interface IncidentFormProps {
     onCancel: () => void
 }
 
+// Fields come back from the Table API either as plain strings or as { value } objects
+const fieldText = (field: IncidentField | undefined): string =>
+    (typeof field === 'object' ? field.value : field) || ''
+
+function toFormData(incident: Incident | null): IncidentInput {
+    return {
+        short_description: fieldText(incident?.short_description),
+        description: fieldText(incident?.description),
+        status: fieldText(incident?.status) || 'new',
+        priority: fieldText(incident?.priority) || '3',
+    }
+}
+
 export default function IncidentForm({ incident, onSubmit, onCancel }: IncidentFormProps) {
     const isEditing = !!incident
 
     const submittedRef = useRef(false)
 
-    const [formData, setFormData] = useState<IncidentInput>({
-        short_description: '',
-        description: '',
-        status: 'new',
-        priority: '3',
-    })
-
-    // Load incident data if editing
-    useEffect(() => {
-        if (incident) {
-            const shortDesc =
-                typeof incident.short_description === 'object'
-                    ? incident.short_description.value
-                    : incident.short_description
-            const description =
-                typeof incident.description === 'object' ? incident.description.value : incident.description
-            const status = typeof incident.status === 'object' ? incident.status.value : incident.status
-            const priority = typeof incident.priority === 'object' ? incident.priority.value : incident.priority
-
-            setFormData({
-                short_description: shortDesc || '',
-                description: description || '',
-                status: status || 'new',
-                priority: priority || '3',
-            })
-        }
-    }, [incident])
+    const [formData, setFormData] = useState<IncidentInput>(() => toFormData(incident))
 
     const handleFooterAction = (e: { detail: { payload: { action: FooterAction } } }) => {
         // Guard: prevent the deferred onOpenedSet callback from also firing
