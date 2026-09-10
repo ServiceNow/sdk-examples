@@ -36,6 +36,7 @@ This repository contains sample code illustrating the [ServiceNow SDK](https://d
 | [Automated Test Framework](test-atf-sample/README.md)         | ATF test sample                |
 | [React UI Page Typescript](react-ui-page-ts-sample/README.md) | React Typescript sample        |
 | [React UI Page Vite](react-ui-page-vite-sample/README.md)     | React Vite sample              |
+| [React Components Vite](react-components-vite-sample/README.md) | React Components (Vite) sample |
 | [Service Portal](service-portal-sample/README.md)             | Service Portal sample          |
 | [UI Action](uiaction-sample/README.md)                        | UiAction sample                |
 | [Script Action](scriptaction-sample/README.md)                | ScriptAction sample            |

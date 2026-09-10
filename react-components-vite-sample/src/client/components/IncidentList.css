@@ -1,0 +1,49 @@
+.incident-list {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.incident-list table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.incident-list th {
+    background-color: var(--now-color--background-secondary, #f5f5f5);
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--now-color--text-secondary, #555);
+}
+
+.incident-list td {
+    padding: 10px 16px;
+    border-top: 1px solid var(--now-color--divider-tertiary, #eee);
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.incident-list tr:hover td {
+    background-color: var(--now-color--background-tertiary, #f9f9f9);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.no-incidents {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--now-color--background-secondary, #f9f9f9);
+    border-radius: 8px;
+    color: var(--now-color--text-tertiary, #666);
+}
+
+.no-incidents img {
+    opacity: 0.4;
+    margin-bottom: 8px;
+}

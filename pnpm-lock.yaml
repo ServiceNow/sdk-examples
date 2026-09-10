@@ -10,11 +10,11 @@ catalogs:
       specifier: 27.0.5
       version: 27.0.5
     '@servicenow/isomorphic-rollup':
-      specifier: 1.3.8
-      version: 1.3.8
+      specifier: 1.3.10
+      version: 1.3.10
     '@servicenow/sdk':
-      specifier: 4.11.0
-      version: 4.11.0
+      specifier: 4.12.0
+      version: 4.12.0
     typescript:
       specifier: 5.8.2
       version: 5.8.2
@@ -43,13 +43,13 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
 
   applicationmenu-sample:
     devDependencies:
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -61,7 +61,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -70,7 +70,7 @@ importers:
     devDependencies:
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -79,7 +79,7 @@ importers:
     devDependencies:
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -91,7 +91,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -103,7 +103,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -115,10 +115,49 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
+
+  react-components-vite-sample:
+    devDependencies:
+      '@servicenow/glide':
+        specifier: 'catalog:'
+        version: 27.0.5
+      '@servicenow/isomorphic-rollup':
+        specifier: 'catalog:'
+        version: 1.3.10
+      '@servicenow/react-components':
+        specifier: 0.1.8
+        version: 0.1.8(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@servicenow/sdk':
+        specifier: 'catalog:'
+        version: 4.12.0(@types/node@20.19.35)
+      '@types/react':
+        specifier: 19.x
+        version: 19.2.14
+      '@types/react-dom':
+        specifier: 19.x
+        version: 19.2.3(@types/react@19.2.14)
+      '@vitejs/plugin-react':
+        specifier: 6.x
+        version: 6.1.0(vite@8.2.2(@types/node@20.19.35)(esbuild@0.28.2)(sass@1.101.0))
+      react:
+        specifier: 19.x
+        version: 19.2.4
+      react-dom:
+        specifier: 19.x
+        version: 19.2.4(react@19.2.4)
+      sn-translate:
+        specifier: 24.0.1
+        version: 24.0.1
+      typescript:
+        specifier: 'catalog:'
+        version: 5.8.2
+      vite:
+        specifier: 8.x
+        version: 8.2.2(@types/node@20.19.35)(esbuild@0.28.2)(sass@1.101.0)
 
   react-ui-page-ts-sample:
     devDependencies:
@@ -127,10 +166,10 @@ importers:
         version: 27.0.5
       '@servicenow/isomorphic-rollup':
         specifier: 'catalog:'
-        version: 1.3.8
+        version: 1.3.10
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       '@types/react':
         specifier: 19.x
         version: 19.2.14
@@ -160,7 +199,7 @@ importers:
         version: 0.1.8(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       '@types/react':
         specifier: 19.x
         version: 19.2.14
@@ -170,9 +209,6 @@ importers:
       '@vitejs/plugin-react':
         specifier: 6.x
         version: 6.1.0(vite@8.2.2(@types/node@20.19.35)(esbuild@0.28.2)(sass@1.101.0))
-      eslint:
-        specifier: 8.50.0
-        version: 8.50.0
       react:
         specifier: 19.x
         version: 19.2.4
@@ -193,7 +229,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -205,7 +241,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -217,7 +253,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -229,7 +265,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -241,7 +277,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -253,7 +289,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
 
   solidjs-ui-page-sample:
     devDependencies:
@@ -271,10 +307,10 @@ importers:
         version: 27.0.5
       '@servicenow/isomorphic-rollup':
         specifier: 'catalog:'
-        version: 1.3.8
+        version: 1.3.10
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       babel-preset-solid:
         specifier: ^1.9.9
         version: 1.9.10(@babel/core@7.29.0)(solid-js@1.9.11)
@@ -292,7 +328,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -307,10 +343,10 @@ importers:
         version: 27.0.5
       '@servicenow/isomorphic-rollup':
         specifier: 'catalog:'
-        version: 1.3.8
+        version: 1.3.10
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       rollup-plugin-svelte:
         specifier: 7.2.3
         version: 7.2.3(rollup@4.62.2)(svelte@5.38.7)
@@ -328,7 +364,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -340,7 +376,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -352,7 +388,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -364,7 +400,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -376,7 +412,7 @@ importers:
         version: 27.0.5
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
@@ -388,10 +424,10 @@ importers:
         version: 27.0.5
       '@servicenow/isomorphic-rollup':
         specifier: 'catalog:'
-        version: 1.3.8
+        version: 1.3.10
       '@servicenow/sdk':
         specifier: 'catalog:'
-        version: 4.11.0(@types/node@20.19.35)
+        version: 4.12.0(@types/node@20.19.35)
       rollup-plugin-vue:
         specifier: 6.0.0
         version: 6.0.0(@vue/compiler-sfc@3.5.21)
@@ -727,10 +763,6 @@ packages:
     resolution: {integrity: sha512-l2Ul9PrHsPCKcEY/ac7VgFj9D80C7S68sOKc618SyHDPK36s1XcFebXY0iTzUVn4Yq+YbwvSnDmCz9yxjX+QrA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/js@8.50.0':
-    resolution: {integrity: sha512-NCC3zz2+nvYd+Ckfh87rA47zfu2QsQpvc6k1yzTk+b9KzRj0wkGa8LSoGOXN6Zv4lRf/EIoZ80biDh9HOI+RNQ==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-
   '@eslint/js@8.57.1':
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -797,11 +829,6 @@ packages:
   '@humanfs/types@0.15.0':
     resolution: {integrity: sha512-ZZ1w0aoQkwuUuC7Yf+7sdeaNfqQiiLcSRbfI08oAxqLtpXQr9AIVX7Ay7HLDuiLYAaFPu8oBYNq/QIi9URHJ3Q==}
     engines: {node: '>=18.18.0'}
-
-  '@humanwhocodes/config-array@0.11.14':
-    resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
-    engines: {node: '>=10.10.0'}
-    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/config-array@0.13.0':
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
@@ -1216,6 +1243,12 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
+  '@posthog/core@1.53.0':
+    resolution: {integrity: sha512-qlEavIUVIdTUJIsJoMLO+mPxB9OfUiTMPwaIRkO+r8iabEQGeatu+MDCiDWYIvHaSQsWQhBvZfojYRmqoom7KQ==}
+
+  '@posthog/types@1.411.0':
+    resolution: {integrity: sha512-QGdIzlcdCHKYvu3aANP2yjM80ly5Y5BRCygFrLMzavJ9WqiLtsPJQG1fRnpMAelK3j07DjmVwgTSlFY1FBCpzw==}
+
   '@rolldown/binding-android-arm-eabi@1.2.6':
     resolution: {integrity: sha512-b+jTcARdTiFLI6jB4a5XjTm0RWd6KcRfQj/I2356fxUZemiho9zQLxo0RtCuMDAyKcLo6cEltkgbQp6d1+sjjQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -1492,8 +1525,8 @@ packages:
     resolution: {integrity: sha512-j+bOmUJ0UYtZ5pVnTPZApqdFIQDb17Eos9vVW/UkEUTbujUu3VFvqmvH3TGiHDdLTtWPupspLb0dO0q+YkNEsg==}
     engines: {node: '>=20.18.0'}
 
-  '@servicenow/isomorphic-rollup@1.3.8':
-    resolution: {integrity: sha512-/LBOeU/o4nzGh1YV/IootfIvfDDMgHlq/d1rd1ztIDpNlsvkVrSHZYiHH2C7ULZfrp6GagqPTtD+VbNOpbzQyw==}
+  '@servicenow/isomorphic-rollup@1.3.10':
+    resolution: {integrity: sha512-LCP07oDyRKferCnAzaekdNcu+VwvFjOJeiS5bttrCOktXS/R09UaTthCflOHmhHBeD8hgx4K1U/+v5swJ5qWuw==}
 
   '@servicenow/react-components@0.1.8':
     resolution: {integrity: sha512-ylX4EF555vAFHcnXvGfJzJTfIxv28rBvL3hmVnNFPDONj9tSpzysu5ZoJVm8X0Ub/mypqITKtrV3ZGwDFcNaHg==}
@@ -1502,31 +1535,31 @@ packages:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
 
-  '@servicenow/sdk-api@4.11.0':
-    resolution: {integrity: sha512-5EG0Qv210DUxXDdEK4LQ/sypTilSU6Gsc88KQaV2RyHYH2TBkkMqGJWb6/OF8VJxvRBgUspEKo9Rb7K+cVX8FQ==}
+  '@servicenow/sdk-api@4.12.0':
+    resolution: {integrity: sha512-+qZQR0wSPRM3pQTRcQZlxyk8aTgWe3DvrwYm6FDnfpHCZr0rEFt1td83+INOThALpohC1nnhL4lsob5/0XZCqg==}
     engines: {node: '>=20.18.0', pnpm: '>=10.8.0'}
 
-  '@servicenow/sdk-build-core@4.11.0':
-    resolution: {integrity: sha512-E1Y+0pRumCFTxQxj826xCg7dVagwKxX7U3M16f6U7FB6n8VCOXaLuDIhY9E4XbAo+qwwin2fet++pBi3W9Sr0g==}
+  '@servicenow/sdk-build-core@4.12.0':
+    resolution: {integrity: sha512-e35m5OUTWPIQQdEyx1TjJ+fRmS2wDuhvchvDDHcDv+9PfEj8giSUS4h+ghlWkQub4FX/Vph8WekTXEwws1DPfg==}
     engines: {node: '>=20.18.0', pnpm: '>=10.8.0'}
 
-  '@servicenow/sdk-build-plugins@4.11.0':
-    resolution: {integrity: sha512-2rR9BpERALqTKmyw9DF/b3fojtkapoT+wlFZ9dn4OcRdRcD19jbvxliXcLmR4il9N971dAJ6NRy8iIpODVTxbQ==}
+  '@servicenow/sdk-build-plugins@4.12.0':
+    resolution: {integrity: sha512-GIlVkuuQTXpiLwTv8P+GwKEBlXvGvQ23y3usfnDIRbhVuTqODVYDxny36XkbuO5lccj3u5S8otvLB/bqXb3xLA==}
     engines: {node: '>=20.18.0', pnpm: '>=10.8.0'}
 
-  '@servicenow/sdk-cli@4.11.0':
-    resolution: {integrity: sha512-w5d+9s8ezCXUFCsGZNA9Z4SXokfFBCxKY7Z+xbaphc1968GYTdGlDm0VVsvEqmdGY317rU+Z+oRBOmKDx195Mg==}
+  '@servicenow/sdk-cli@4.12.0':
+    resolution: {integrity: sha512-hqTHR8Pi44WwEuEM6600BdJ3PQNVrcDX59v8lIPpXzDzNp4PAdZD1kNucj0mjFXAStGfODVNXTUZs3Qd04dVvw==}
     engines: {node: '>=20.18.0', pnpm: '>=10.8.0'}
 
-  '@servicenow/sdk-core@4.11.0':
-    resolution: {integrity: sha512-0yUXUd1VcJV+BC6nQsVkJ1UNW3r3Yx1/fGyCs/9uMtLQqj0sBoM/F1mK3QUcnVBetF9PVcVzf9tShKvhyiSq+A==}
+  '@servicenow/sdk-core@4.12.0':
+    resolution: {integrity: sha512-waGMQPukb0bi5BSD0Ce03nEjdhHdrbT77sbqWXQ+jJJ11II6hT9cFKkRYNJhXhV3t2KDfajXtOVxMgVD6Wak/w==}
     engines: {node: '>=20.18.0', pnpm: '>=10.8.0'}
 
-  '@servicenow/sdk-repack@4.11.0':
-    resolution: {integrity: sha512-4zAamCDpKdBlNRAY1v/YrP40FQeL+4s4J02d41MCEn1ZgliTUqK5u0/XNf1qi70m1zO/nlPx3ihZK7z0aEUfYQ==}
+  '@servicenow/sdk-repack@4.12.0':
+    resolution: {integrity: sha512-E6FYGr+FFEevS4ChMfIMh5U0DU2WrlrWokHIqOWxiLV7lxrCFjxToHIP7zSllIasv+aXZLM3LCHJNGU2xmCUVg==}
 
-  '@servicenow/sdk@4.11.0':
-    resolution: {integrity: sha512-ct+vgI/tdTXWng0XrDBDPPXVuXuU80iCQeFb90ZYaaCVmXho/6i4eKm/HOS7mQCT/Ty7tgErrL+lULQBNHltnA==}
+  '@servicenow/sdk@4.12.0':
+    resolution: {integrity: sha512-czaAt8rYP0pFGigVQFrfdrr5jGn24HJSu18qOG+eHy+S5upoAQobpTa4ghBycwhtjSWVILSoy9SoYoHkHWC6HQ==}
     engines: {ide_api: ^1.0, node: '>=20.18.0', pnpm: '>=10.8.0'}
     hasBin: true
 
@@ -2205,12 +2238,6 @@ packages:
   eslint-visitor-keys@4.2.1:
     resolution: {integrity: sha512-Uhdk5sfqcee/9H/rCOJikYz67o0a2Tw2hGRPOG2Y1R2dg7brRe1uG0yaNQDHu+TO/uQPF/5eCapvYSmHUjt7JQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  eslint@8.50.0:
-    resolution: {integrity: sha512-FOnOGSuFuFLv/Sa+FDVRZl4GGVAAFFi8LecRsI5a1tMO5HIE8nCm4ivAlzt4dT3ol/PaaGC0rJEEXQmHJBGoOg==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
-    hasBin: true
 
   eslint@8.57.1:
     resolution: {integrity: sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==}
@@ -2957,7 +2984,7 @@ packages:
     resolution: {integrity: sha512-iSAJLHYKnX41mKcJKjqvnAN9sf0LMDTXDEvFv+ffuRR9a1MIuXLjMNL6EsnDHSkKLTWNqQQ5uo61P4EbU4NU+Q==}
 
   ms@2.1.3:
-    resolution: {integrity: sha1-V0yBOM4dK1hh8LRFedut1gxmFbI=}
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
   mute-stream@2.0.0:
     resolution: {integrity: sha512-WWdIxpyjEn+FhQJQQv9aQAYlHoNVdzIzUySNV1gHUPDSdZJ3yZn7pAAbQcV7B56Mvu881q9FZV+0Vx2xC44VWA==}
@@ -3163,6 +3190,15 @@ packages:
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
+
+  posthog-node@5.51.6:
+    resolution: {integrity: sha512-r+Ge3p0OnOcOWeTnvKZmAtDwECeIoyNTyxBxuZc8wM6RHCQ9j2Xrhogrf39HSq1Y2gIOpWLqIDRmWDcu7xmqcA==}
+    engines: {node: ^20.20.0 || >=22.22.0}
+    peerDependencies:
+      rxjs: ^7.0.0
+    peerDependenciesMeta:
+      rxjs:
+        optional: true
 
   prebuild-install@7.1.3:
     resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
@@ -3440,6 +3476,9 @@ packages:
     resolution: {integrity: sha512-Gz11jbNU0plrReU9Sj7fmshSBxxJ9ShdD2q4ktHIHo/rpTH6lFyQoYHYKINPJtPe8aHFnsbtW46Ls0tCCBsIZg==}
     engines: {node: '>=0.10'}
 
+  sn-translate@24.0.1:
+    resolution: {integrity: sha512-85gQ0GW1RJeApCxX5LJuSeGsuUNaS96YDUxV2q/X1SlUsQ07hPy+W9QNp3q040PHfYOYLqbBHfY+iMV8A+2mtQ==}
+
   socks-proxy-agent@8.0.5:
     resolution: {integrity: sha512-HehCEsotFqbPW9sJ8WVYB6UbmIMv7kUUORIF2Nncq4VQvBfNBLibW9YZR5dlYCSUhwcD628pRllm7n+E+YTzJw==}
     engines: {node: '>= 14'}
@@ -3485,6 +3524,9 @@ packages:
   statuses@2.0.2:
     resolution: {integrity: sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw==}
     engines: {node: '>= 0.8'}
+
+  string-template@1.0.0:
+    resolution: {integrity: sha512-SLqR3GBUXuoPP5MmYtD7ompvXiG87QjT6lzOszyXjTM86Uu7At7vNnt2xgyTLq5o9T4IxTYFyGxcULqpsmsfdg==}
 
   string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
@@ -3557,20 +3599,9 @@ packages:
     resolution: {integrity: sha512-e2zZ96wSChazBsbENf/Pcm/4swHt2cEKQ92rhUjkL9GCKiTDJIaTBenjE/m9DXi0QBmTMDkFDdOomUy20A1tDQ==}
     engines: {node: '>=20'}
 
-  tinyglobby@0.2.15:
-    resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
-    engines: {node: '>=12.0.0'}
-
   tinyglobby@0.2.17:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
-
-  tldts-core@6.1.86:
-    resolution: {integrity: sha512-Je6p7pkk+KMzMv2XXKmAE3McmolOQFdxkKw0R8EYNr7sELW46JqnNeTX8ybPiQgvg1ymCoF8LXs5fzFaZvJPTA==}
-
-  tldts@6.1.86:
-    resolution: {integrity: sha512-WMi/OQ2axVTf/ykqCQgXiIct+mSQDFdH2fkwhPwgEwvJ1kSzZRiinb0zF2Xb8u4+OqPChmyI6MEu4EezNJz+FQ==}
-    hasBin: true
 
   to-buffer@1.2.2:
     resolution: {integrity: sha512-db0E3UJjcFhpDhAF4tLo03oli3pwl3dbnzXOUIlRKrp+ldk/VUxzpWYZENsw2SZiuBjHAk7DfB0VU7NKdpb6sw==}
@@ -3587,10 +3618,6 @@ packages:
   toidentifier@1.0.1:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
-
-  tough-cookie@5.1.2:
-    resolution: {integrity: sha512-FVDYdxtnj0G6Qm/DhNPSb8Ju59ULcup3tuJxkFb5K8Bv2pUXILbf0xZWU8PX8Ov19OXljbUyveOFwRMwkXzO+A==}
-    engines: {node: '>=16'}
 
   ts-api-utils@1.4.3:
     resolution: {integrity: sha512-i3eMG77UTMD0hZhgRS562pv83RC6ukSAC2GMNWc+9dieh/+jDM5u5YG+NHX6VNDRHQcHwmsTHctP9LhbC3WxVw==}
@@ -4128,11 +4155,6 @@ snapshots:
   '@esbuild/win32-x64@0.28.2':
     optional: true
 
-  '@eslint-community/eslint-utils@4.9.1(eslint@8.50.0)':
-    dependencies:
-      eslint: 8.50.0
-      eslint-visitor-keys: 3.4.3
-
   '@eslint-community/eslint-utils@4.9.1(eslint@8.57.1)':
     dependencies:
       eslint: 8.57.1
@@ -4188,8 +4210,6 @@ snapshots:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
-
-  '@eslint/js@8.50.0': {}
 
   '@eslint/js@8.57.1': {}
 
@@ -4282,14 +4302,6 @@ snapshots:
       '@humanwhocodes/retry': 0.4.3
 
   '@humanfs/types@0.15.0': {}
-
-  '@humanwhocodes/config-array@0.11.14':
-    dependencies:
-      '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.4.3
-      minimatch: 3.1.5
-    transitivePeerDependencies:
-      - supports-color
 
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
@@ -4631,7 +4643,7 @@ snapshots:
       detect-libc: 2.1.2
       is-glob: 4.0.3
       node-addon-api: 7.1.1
-      picomatch: 4.0.4
+      picomatch: 4.0.7
     optionalDependencies:
       '@parcel/watcher-android-arm64': 2.5.6
       '@parcel/watcher-darwin-arm64': 2.5.6
@@ -4652,6 +4664,12 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@posthog/core@1.53.0':
+    dependencies:
+      '@posthog/types': 1.411.0
+
+  '@posthog/types@1.411.0': {}
 
   '@rolldown/binding-android-arm-eabi@1.2.6':
     optional: true
@@ -4811,7 +4829,7 @@ snapshots:
 
   '@servicenow/glide@27.0.5': {}
 
-  '@servicenow/isomorphic-rollup@1.3.8':
+  '@servicenow/isomorphic-rollup@1.3.10':
     dependencies:
       '@fastify/http-proxy': 11.4.4
       '@fastify/static': 10.1.1
@@ -4835,12 +4853,12 @@ snapshots:
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
 
-  '@servicenow/sdk-api@4.11.0':
+  '@servicenow/sdk-api@4.12.0':
     dependencies:
-      '@servicenow/isomorphic-rollup': 1.3.8
-      '@servicenow/sdk-build-core': 4.11.0
-      '@servicenow/sdk-build-plugins': 4.11.0
-      '@servicenow/sdk-core': 4.11.0
+      '@servicenow/isomorphic-rollup': 1.3.10
+      '@servicenow/sdk-build-core': 4.12.0
+      '@servicenow/sdk-build-plugins': 4.12.0
+      '@servicenow/sdk-core': 4.12.0
       crypto-js: 4.2.0
       fast-json-stable-stringify: 2.1.0
       fast-xml-parser: 5.7.2
@@ -4852,12 +4870,13 @@ snapshots:
       - '@swc/helpers'
       - bufferutil
       - jiti
+      - rxjs
       - supports-color
       - utf-8-validate
 
-  '@servicenow/sdk-build-core@4.11.0':
+  '@servicenow/sdk-build-core@4.12.0':
     dependencies:
-      '@servicenow/sdk-core': 4.11.0
+      '@servicenow/sdk-core': 4.12.0
       ci-info: 4.4.0
       fast-glob: 3.3.3
       fflate: 0.8.2
@@ -4866,6 +4885,7 @@ snapshots:
       lodash: 4.18.1
       nanotar: 0.3.0
       pathe: 1.1.2
+      posthog-node: 5.51.6
       prettier: 3.6.1
       readable-stream: 4.5.2
       ts-morph: 24.0.0
@@ -4873,15 +4893,17 @@ snapshots:
       xml-js: 1.6.11
       xmlbuilder2: 4.0.3
       zod: 3.23.8
+    transitivePeerDependencies:
+      - rxjs
 
-  '@servicenow/sdk-build-plugins@4.11.0':
+  '@servicenow/sdk-build-plugins@4.12.0':
     dependencies:
       '@cyclonedx/cyclonedx-library': 8.6.0
       '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4)
       '@servicenow/glide': 27.0.5
-      '@servicenow/sdk-build-core': 4.11.0
-      '@servicenow/sdk-core': 4.11.0
-      '@servicenow/sdk-repack': 4.11.0
+      '@servicenow/sdk-build-core': 4.12.0
+      '@servicenow/sdk-core': 4.12.0
+      '@servicenow/sdk-repack': 4.12.0
       eslint: 9.39.4
       eslint-formatter-stylish: 8.40.0
       fast-xml-parser: 5.7.2
@@ -4903,15 +4925,16 @@ snapshots:
       - '@swc/helpers'
       - bufferutil
       - jiti
+      - rxjs
       - supports-color
       - utf-8-validate
 
-  '@servicenow/sdk-cli@4.11.0(@types/node@20.19.35)':
+  '@servicenow/sdk-cli@4.12.0(@types/node@20.19.35)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@20.19.35)
       '@napi-rs/keyring': 1.2.0
-      '@servicenow/sdk-api': 4.11.0
-      '@servicenow/sdk-build-core': 4.11.0
+      '@servicenow/sdk-api': 4.12.0
+      '@servicenow/sdk-build-core': 4.12.0
       chalk: 4.1.2
       clipboardy: 4.0.0
       lodash: 4.18.1
@@ -4919,38 +4942,40 @@ snapshots:
       openid-client: 5.6.5
       rc: 1.2.8
       semver: 7.5.4
-      tough-cookie: 5.1.2
       yargs: 17.6.2
     transitivePeerDependencies:
       - '@swc/helpers'
       - '@types/node'
       - bufferutil
       - jiti
+      - rxjs
       - supports-color
       - utf-8-validate
 
-  '@servicenow/sdk-core@4.11.0': {}
+  '@servicenow/sdk-core@4.12.0': {}
 
-  '@servicenow/sdk-repack@4.11.0':
+  '@servicenow/sdk-repack@4.12.0':
     dependencies:
-      '@servicenow/isomorphic-rollup': 1.3.8
-      '@servicenow/sdk-build-core': 4.11.0
+      '@servicenow/isomorphic-rollup': 1.3.10
+      '@servicenow/sdk-build-core': 4.12.0
       rollup: 4.62.2
     transitivePeerDependencies:
       - '@swc/helpers'
       - bufferutil
+      - rxjs
       - utf-8-validate
 
-  '@servicenow/sdk@4.11.0(@types/node@20.19.35)':
+  '@servicenow/sdk@4.12.0(@types/node@20.19.35)':
     dependencies:
-      '@servicenow/sdk-api': 4.11.0
-      '@servicenow/sdk-cli': 4.11.0(@types/node@20.19.35)
-      '@servicenow/sdk-core': 4.11.0
+      '@servicenow/sdk-api': 4.12.0
+      '@servicenow/sdk-cli': 4.12.0(@types/node@20.19.35)
+      '@servicenow/sdk-core': 4.12.0
     transitivePeerDependencies:
       - '@swc/helpers'
       - '@types/node'
       - bufferutil
       - jiti
+      - rxjs
       - supports-color
       - utf-8-validate
 
@@ -5030,7 +5055,7 @@ snapshots:
     dependencies:
       minimatch: 9.0.9
       path-browserify: 1.0.1
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.17
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -5661,48 +5686,6 @@ snapshots:
 
   eslint-visitor-keys@4.2.1: {}
 
-  eslint@8.50.0:
-    dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@8.50.0)
-      '@eslint-community/regexpp': 4.12.2
-      '@eslint/eslintrc': 2.1.4
-      '@eslint/js': 8.50.0
-      '@humanwhocodes/config-array': 0.11.14
-      '@humanwhocodes/module-importer': 1.0.1
-      '@nodelib/fs.walk': 1.2.8
-      ajv: 6.14.0
-      chalk: 4.1.2
-      cross-spawn: 7.0.6
-      debug: 4.4.3
-      doctrine: 3.0.0
-      escape-string-regexp: 4.0.0
-      eslint-scope: 7.2.2
-      eslint-visitor-keys: 3.4.3
-      espree: 9.6.1
-      esquery: 1.7.0
-      esutils: 2.0.3
-      fast-deep-equal: 3.1.3
-      file-entry-cache: 6.0.1
-      find-up: 5.0.0
-      glob-parent: 6.0.2
-      globals: 13.24.0
-      graphemer: 1.4.0
-      ignore: 5.3.2
-      imurmurhash: 0.1.4
-      is-glob: 4.0.3
-      is-path-inside: 3.0.3
-      js-yaml: 4.3.1
-      json-stable-stringify-without-jsonify: 1.0.1
-      levn: 0.4.1
-      lodash.merge: 4.6.2
-      minimatch: 3.1.5
-      natural-compare: 1.4.0
-      optionator: 0.9.4
-      strip-ansi: 6.0.1
-      text-table: 0.2.0
-    transitivePeerDependencies:
-      - supports-color
-
   eslint@8.57.1:
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@8.57.1)
@@ -5928,10 +5911,6 @@ snapshots:
   fastq@1.20.1:
     dependencies:
       reusify: 1.1.0
-
-  fdir@6.5.0(picomatch@4.0.4):
-    optionalDependencies:
-      picomatch: 4.0.4
 
   fdir@6.5.0(picomatch@4.0.7):
     optionalDependencies:
@@ -6588,7 +6567,7 @@ snapshots:
       proc-log: 5.0.0
       semver: 7.7.4
       tar: 7.5.9
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.17
       which: 5.0.0
     transitivePeerDependencies:
       - supports-color
@@ -6743,6 +6722,10 @@ snapshots:
       nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  posthog-node@5.51.6:
+    dependencies:
+      '@posthog/core': 1.53.0
 
   prebuild-install@7.1.3:
     dependencies:
@@ -7054,6 +7037,10 @@ snapshots:
       nearley: 2.20.1
     optional: true
 
+  sn-translate@24.0.1:
+    dependencies:
+      string-template: 1.0.0
+
   socks-proxy-agent@8.0.5:
     dependencies:
       agent-base: 7.1.4
@@ -7103,6 +7090,8 @@ snapshots:
     optional: true
 
   statuses@2.0.2: {}
+
+  string-template@1.0.0: {}
 
   string-width@4.2.3:
     dependencies:
@@ -7201,21 +7190,10 @@ snapshots:
     dependencies:
       real-require: 1.0.0
 
-  tinyglobby@0.2.15:
-    dependencies:
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
-
   tinyglobby@0.2.17:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
-
-  tldts-core@6.1.86: {}
-
-  tldts@6.1.86:
-    dependencies:
-      tldts-core: 6.1.86
 
   to-buffer@1.2.2:
     dependencies:
@@ -7230,10 +7208,6 @@ snapshots:
   toad-cache@3.7.4: {}
 
   toidentifier@1.0.1: {}
-
-  tough-cookie@5.1.2:
-    dependencies:
-      tldts: 6.1.86
 
   ts-api-utils@1.4.3(typescript@5.8.2):
     dependencies:

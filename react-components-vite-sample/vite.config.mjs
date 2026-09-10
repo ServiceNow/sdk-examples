@@ -7,5 +7,10 @@ export default defineConfig({
     // through the Rollup plugin pipeline.
     // Vite 8 replaced esbuild with Oxc as the built-in transformer, so this is
     // `oxc: false`. On Vite 6/7 the equivalent option is `esbuild: false`.
-    oxc: false
+    oxc: false,
+    // Skip dependency optimization for our @servicenow/react-components so we can handle
+    // mapping external paths when running the dev server.
+    optimizeDeps: {
+        exclude: ['@servicenow/react-components']
+    }
 })

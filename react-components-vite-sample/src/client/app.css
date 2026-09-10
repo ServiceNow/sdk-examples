@@ -1,0 +1,30 @@
+.incident-app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--now-color--divider-primary, #ddd);
+}
+
+.app-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-logo {
+    flex-shrink: 0;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
