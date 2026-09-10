@@ -15,6 +15,21 @@ export default async ({ rootDir, config, fs, path, logger, credential }) => {
 
     const proxy = await createViteProxy(credential)
 
+    const { configure } = proxy['/amb']
+    const authHeaders = await credential.getHeaders()
+
+    // Setting up WebSocket proxy to forward authentication headers for AMB
+    proxy['/amb'] = {
+        ...proxy['/amb'],
+        rewriteWsOrigin: true,
+        configure: (proxyServer, options) => {
+            configure?.(proxyServer, options)
+            proxyServer.on('proxyReqWs', (proxyReq) => Object.entries(authHeaders)
+                .forEach((header) => proxyReq.setHeader(...header))
+            )
+        },
+    }
+
     const server = await createServer({
         root: clientDir,
         configFile: path.join(rootDir, 'vite.config.mjs'),
