@@ -1,0 +1,6 @@
+{
+  "scope": "x_rcvitesample",
+  "scopeId": "437d6bc5c42b30a03ac7514b3049d21a",
+  "name": "React Components Example (Vite)",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}

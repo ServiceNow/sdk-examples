@@ -10,22 +10,8 @@ declare module '*.css' {
     export default content
 }
 
+// SVG imports resolve to a URL string (Vite default behavior)
 declare module '*.svg' {
-    const url: string
-    export default url
-}
-
-declare module '*.png' {
-    const url: string
-    export default url
-}
-
-declare module '*.jpg' {
-    const url: string
-    export default url
-}
-
-declare module '*.gif' {
     const url: string
     export default url
 }

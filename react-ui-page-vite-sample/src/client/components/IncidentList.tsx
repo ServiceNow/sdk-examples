@@ -4,6 +4,7 @@ import emptyStateUrl from '../assets/empty-state.svg'
 import { errorMessage } from '../utils/errors'
 import type { Incident, IncidentField } from '../types'
 import type { IncidentService } from '../services/IncidentService'
+import StatusBadge from './StatusBadge'
 import './IncidentList.css'
 
 interface IncidentListProps {
@@ -111,9 +112,10 @@ export default function IncidentList({ incidents, onEdit, onRefresh, service }: 
                                     <td>{number}</td>
                                     <td>{shortDesc}</td>
                                     <td>
-                                        <span className={`status-badge ${getStatusClass(incident.status)}`}>
-                                            {status}
-                                        </span>
+                                        <StatusBadge
+                                            status={typeof incident.status === 'object' ? incident.status.value : incident.status}
+                                            label={status ?? ''}
+                                        />
                                     </td>
                                     <td>
                                         <span className={`priority-badge ${getPriorityClass(incident.priority)}`}>

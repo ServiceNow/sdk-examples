@@ -1,7 +1,7 @@
 {
-    "name": "react-ui-page-vite-sample",
+    "name": "react-components-vite-sample",
     "version": "0.0.1",
-    "description": "",
+    "description": "React UI Page sample using @servicenow/react-components",
     "license": "UNLICENSED",
     "scripts": {
         "dev": "now-sdk run dev",
@@ -12,12 +12,13 @@
     },
     "devDependencies": {
         "@servicenow/glide": "catalog:",
-        "@servicenow/isomorphic-rollup": "link:/Users/richard.bull/git/isomorphic-rollup",
+        "@servicenow/isomorphic-rollup": "catalog:",
         "@servicenow/react-components": "0.1.8",
         "@servicenow/sdk": "catalog:",
         "@types/react": "19.x",
         "@types/react-dom": "19.x",
         "@vitejs/plugin-react": "6.x",
+        "sn-translate": "24.0.1",
         "react": "19.x",
         "react-dom": "19.x",
         "typescript": "catalog:",
